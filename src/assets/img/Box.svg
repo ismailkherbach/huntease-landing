@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="95" height="95" viewBox="0 0 95 95">
+  <g id="Box" transform="translate(0.247 1.247)">
+    <g id="Box-2" data-name="Box" transform="translate(0 -1)">
+      <rect id="Rectangle" width="95" height="95" transform="translate(-0.247 -0.247)" opacity="0"/>
+      <path id="Stroke-1" d="M35.584,3,67.169,18.792V58.273L35.584,74.065,4,58.273V18.792Z" transform="translate(11.792 9.683)" fill="none" stroke="#0026bc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7" fill-rule="evenodd"/>
+      <path id="Stroke-3" d="M4,7,35.584,22.792,67.169,7" transform="translate(11.792 21.475)" fill="none" stroke="#0026bc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7" fill-rule="evenodd"/>
+      <path id="Stroke-5" d="M12,50.481V11" transform="translate(35.377 33.267)" fill="none" stroke="#0026bc" stroke-linecap="round" stroke-linejoin="round" stroke-width="7" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

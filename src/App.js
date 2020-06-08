@@ -1,24 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./assets/styles/landing.scss";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import FirstBloc from "./components/FirstBloc";
+import SecondBloc from "./components/SecondBloc";
+import BlocThree from "./components/BlocThree";
+import BlocFor from "./components/BlocFor";
+import BlocFive from "./components/BlocFive";
+import BlocPricing from "./components/BlocPricing";
+import FAQ from "./components/FAQ";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="App flex fdc aic">
+      <header className="App-header flex aic jcc">
+        <Header />
       </header>
+      <img
+        className="ilust_1"
+        alt="ilust_1"
+        src={require("./assets/illustrations/ilust_1.svg")}
+      />
+      <FirstBloc />
+      <SecondBloc />
+      <BlocThree />
+      <BlocFive />
+      <BlocFor />
+      <BlocPricing />
+      <FAQ />
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
