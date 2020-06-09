@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "./Navbar";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <div>
-      <Navbar />
+      <Navbar tooglePopup={props.tooglePopup} />
       <div className="flex fdc aic jcc">
         <h2>Increase conversion rate with the best </h2>
         <img alt="separator" src={require("../assets/img/separator.png")} />
@@ -13,7 +13,10 @@ const Header = () => {
           Huntease is an all-in-one sales workspace that employs AI for sales
           growth.
         </h4>
-        <div className="button-demo flex fdr jcc aic">
+        <div
+          className="button-demo flex fdr jcc aic"
+          onClick={props.tooglePopup}
+        >
           Get a free demo
           <img alt="arrow" src={require("../assets/img/arrow.png")} />
         </div>

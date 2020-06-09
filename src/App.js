@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./assets/styles/landing.scss";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -12,19 +12,23 @@ import FAQ from "./components/FAQ";
 import Popup from "./components/small.components/Popup";
 
 function App() {
+  const [popup, setPopup] = useState(false);
+  const tooglePopup = () => {
+    setPopup(!popup);
+  };
   return (
     <div className="App flex fdc aic ">
       <header className="App-header flex aic jcc">
-        <Header />
+        <Header tooglePopup={tooglePopup} />
       </header>
-      <Popup />
+      {popup && <Popup tooglePopup={tooglePopup} />}
       <FirstBloc />
-      <SecondBloc />
-      <BlocThree />
+      <SecondBloc tooglePopup={tooglePopup} />
+      <BlocThree tooglePopup={tooglePopup} />
       <BlocFive />
       <BlocFor />
-      <BlocPricing />
-      <FAQ />
+      <BlocPricing tooglePopup={tooglePopup} />
+      <FAQ tooglePopup={tooglePopup} />
       <footer>
         <Footer />
       </footer>

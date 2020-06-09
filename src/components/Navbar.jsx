@@ -21,7 +21,11 @@ const Navbar = (props) => {
             <li>Pricing</li>
             <li>Faq</li>
           </ul>
-          <div className="button-demo flex aic jcc" id="toggler1">
+          <div
+            className="button-demo flex aic jcc"
+            onClick={props.tooglePopup}
+            id="toggler1"
+          >
             {" "}
             Request a Demo
           </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const FAQ = () => {
+const FAQ = (props) => {
   return (
     <div className="FAQ flex fdc aic jcfs">
       <h2>Frequently Asked Questions</h2>
@@ -44,7 +44,10 @@ const FAQ = () => {
           src={require("../assets/img/separator.svg")}
         />
         <h2> team today?</h2>
-        <div className="button-demo-two flex fdr jcc aic">
+        <div
+          className="button-demo-two flex fdr jcc aic"
+          onClick={props.tooglePopup}
+        >
           <h5 className="Text-inner">Get a free demo</h5>
           <img alt="arrow" src={require(`../assets/img/arrow.svg`)} />
         </div>

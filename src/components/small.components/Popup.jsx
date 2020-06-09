@@ -8,7 +8,9 @@ const Popup = (props) => {
   return (
     <div className="popup-container flex fdr aic jcc">
       <div className="popup flex fdc aic jcc">
-        <div className="cancel flex aic jcc">X</div>{" "}
+        <div className="cancel flex aic jcc" onClick={props.tooglePopup}>
+          X
+        </div>{" "}
         <img
           alt="logo"
           src={require("../../assets/img/logo-white-retina.svg")}

@@ -1,6 +1,6 @@
 import React from "react";
 
-const BlocThree = () => {
+const BlocThree = (props) => {
   return (
     <div className="Bloc-three flex fdr aic jcc">
       <img alt="ilust_2" src={require("../assets/illustrations/ilust_3.svg")} />
@@ -16,7 +16,10 @@ const BlocThree = () => {
           deep-learning<br></br> algorithms provide predictive analysis on
           when's the ideal time to sell.
         </h4>
-        <div className="button-demo flex fdr jcc aic">
+        <div
+          className="button-demo flex fdr jcc aic"
+          onClick={props.tooglePopup}
+        >
           Get a free demo
           <img alt="arrow" src={require("../assets/img/arrow.png")} />
         </div>

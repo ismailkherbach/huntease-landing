@@ -1,6 +1,6 @@
 import React from "react";
 
-const BlocPricing = () => {
+const BlocPricing = (props) => {
   return (
     <div className="Bloc-five flex fdc aic jcc">
       <h2>Simple & transparent pricing</h2>
@@ -87,7 +87,10 @@ const BlocPricing = () => {
               </div>
             </div>
           </div>
-          <div className="button-demo flex fdr jcc aic">
+          <div
+            className="button-demo flex fdr jcc aic"
+            onClick={props.tooglePopup}
+          >
             Get a free demo
             <img alt="arrow" src={require("../assets/img/arrow.svg")} />
           </div>
@@ -158,7 +161,10 @@ const BlocPricing = () => {
               </div>
             </div>
           </div>
-          <div className="button-demo flex fdr jcc aic">
+          <div
+            className="button-demo flex fdr jcc aic"
+            onClick={props.tooglePopup}
+          >
             Get a free demo
             <img alt="arrow" src={require("../assets/img/arrow.svg")} />
           </div>
@@ -171,7 +177,10 @@ const BlocPricing = () => {
               Huntease and a plan that best fits your workflow.
             </h4>
           </div>
-          <div className="button-demo flex fdr jcc aic">
+          <div
+            className="button-demo flex fdr jcc aic"
+            onClick={props.tooglePopup}
+          >
             Contact us
             <img alt="arrow" src={require("../assets/img/arrow.svg")} />
           </div>
