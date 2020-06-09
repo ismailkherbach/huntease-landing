@@ -16,11 +16,7 @@ function App() {
       <header className="App-header flex aic jcc">
         <Header />
       </header>
-      <img
-        className="ilust_1"
-        alt="ilust_1"
-        src={require("./assets/illustrations/ilust_1.svg")}
-      />
+
       <FirstBloc />
       <SecondBloc />
       <BlocThree />

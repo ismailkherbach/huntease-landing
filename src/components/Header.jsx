@@ -17,6 +17,11 @@ const Header = () => {
           Get a free demo
           <img alt="arrow" src={require("../assets/img/arrow.png")} />
         </div>
+        <img
+          className="ilust_1"
+          alt="ilust_1"
+          src={require("../assets/illustrations/ilust_1.svg")}
+        />
       </div>
     </div>
   );

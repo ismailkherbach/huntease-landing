@@ -11,9 +11,11 @@ $raduis-bloc: 20px;
   // background-attachment: fixed;
   background-position: right;
   width: 96%;
-  height: 70vh;
+  // height: 70vh;
+  padding: 100px 0 100px 0;
   margin: 2%;
   margin-top: 10px;
+  position: relative;
   @include phone {
     width: 280px;
     height: 406px;
@@ -27,6 +29,9 @@ $raduis-bloc: 20px;
     background-color: #0026bc;
     border-radius: $raduis-bloc;
     width: 98%;
+  }
+  @include desktop-xl {
+    padding: 300px 0 300px 0;
   }
   // background-color: #0026bc;
   border-radius: $raduis-bloc;
@@ -44,6 +49,34 @@ $raduis-bloc: 20px;
     font-size: 22px;
     text-align: center;
     font-weight: 300;
+  }
+  .ilust_1 {
+    //width: 40%;
+    // height: 70%;
+    bottom: -250px;
+    position: absolute;
+    z-index: 400;
+    @include desktop-xl {
+      width: 921px;
+    }
+    @include desktop-md {
+      width: 621px;
+    }
+    @include desktop-lg {
+      width: 621px;
+    }
+    @include desktop-sm {
+      width: 621px;
+    }
+    @include desktop-xs {
+      width: 621px;
+    }
+    @include Tablet {
+      width: 621px;
+    }
+    @include phone {
+      width: 351px;
+    }
   }
 }
 .navbar {
@@ -85,12 +118,6 @@ $raduis-bloc: 20px;
     margin-right: 0;
   }
 }
-.ilust_1 {
-  width: 50%;
-  height: 50%;
-  margin-top: -200px;
-  z-index: 400;
-}
 
 .first-bloc-container {
   background-size: 100%;
@@ -99,7 +126,7 @@ $raduis-bloc: 20px;
   background-position: right;
   width: 96%;
   margin: 2%;
-  margin-top: 10px;
+  margin-top: 240px;
   background-color: white;
   border-radius: $raduis-bloc;
   // padding-left: 350px;
