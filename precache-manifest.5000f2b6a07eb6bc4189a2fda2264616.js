@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ac18a737592334f8de9fc570b173f327",
+    "revision": "4f07319f8f881ee1fe5970f2cb7f4a93",
     "url": "/huntease-landing/index.html"
   },
   {
-    "revision": "5b7edbe8f1340791d20a",
+    "revision": "82b3e9b6ba9148d92369",
     "url": "/huntease-landing/static/css/main.738c2303.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/huntease-landing/static/js/2.c5b07a41.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5b7edbe8f1340791d20a",
-    "url": "/huntease-landing/static/js/main.c170ab91.chunk.js"
+    "revision": "82b3e9b6ba9148d92369",
+    "url": "/huntease-landing/static/js/main.1d4d73da.chunk.js"
   },
   {
     "revision": "d080fe51d7783fc3a3e7",
