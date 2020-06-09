@@ -9,14 +9,15 @@ import BlocFor from "./components/BlocFor";
 import BlocFive from "./components/BlocFive";
 import BlocPricing from "./components/BlocPricing";
 import FAQ from "./components/FAQ";
+import Popup from "./components/small.components/Popup";
 
 function App() {
   return (
-    <div className="App flex fdc aic">
+    <div className="App flex fdc aic ">
       <header className="App-header flex aic jcc">
         <Header />
       </header>
-
+      <Popup />
       <FirstBloc />
       <SecondBloc />
       <BlocThree />
