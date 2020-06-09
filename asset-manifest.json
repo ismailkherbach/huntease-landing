@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/huntease-landing/static/css/main.fd0e4eca.chunk.css",
-    "main.js": "/huntease-landing/static/js/main.bc03c2d7.chunk.js",
-    "main.js.map": "/huntease-landing/static/js/main.bc03c2d7.chunk.js.map",
+    "main.css": "/huntease-landing/static/css/main.788bc2f5.chunk.css",
+    "main.js": "/huntease-landing/static/js/main.4ce359b4.chunk.js",
+    "main.js.map": "/huntease-landing/static/js/main.4ce359b4.chunk.js.map",
     "runtime-main.js": "/huntease-landing/static/js/runtime-main.7f30792d.js",
     "runtime-main.js.map": "/huntease-landing/static/js/runtime-main.7f30792d.js.map",
     "static/js/2.580dd4ff.chunk.js": "/huntease-landing/static/js/2.580dd4ff.chunk.js",
     "static/js/2.580dd4ff.chunk.js.map": "/huntease-landing/static/js/2.580dd4ff.chunk.js.map",
     "index.html": "/huntease-landing/index.html",
-    "precache-manifest.c9ee5173d66109a9f16b2b9016b22a77.js": "/huntease-landing/precache-manifest.c9ee5173d66109a9f16b2b9016b22a77.js",
+    "precache-manifest.1776b78ec83f325646006fb02f49986b.js": "/huntease-landing/precache-manifest.1776b78ec83f325646006fb02f49986b.js",
     "service-worker.js": "/huntease-landing/service-worker.js",
-    "static/css/main.fd0e4eca.chunk.css.map": "/huntease-landing/static/css/main.fd0e4eca.chunk.css.map",
+    "static/css/main.788bc2f5.chunk.css.map": "/huntease-landing/static/css/main.788bc2f5.chunk.css.map",
     "static/js/2.580dd4ff.chunk.js.LICENSE.txt": "/huntease-landing/static/js/2.580dd4ff.chunk.js.LICENSE.txt",
     "static/media/Box.svg": "/huntease-landing/static/media/Box.3a5b2caa.svg",
     "static/media/Chart-dots.svg": "/huntease-landing/static/media/Chart-dots.8243a606.svg",
@@ -35,7 +35,7 @@
   "entrypoints": [
     "static/js/runtime-main.7f30792d.js",
     "static/js/2.580dd4ff.chunk.js",
-    "static/css/main.fd0e4eca.chunk.css",
-    "static/js/main.bc03c2d7.chunk.js"
+    "static/css/main.788bc2f5.chunk.css",
+    "static/js/main.4ce359b4.chunk.js"
   ]
 }
