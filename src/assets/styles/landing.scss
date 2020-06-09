@@ -6,7 +6,7 @@ $raduis-bloc: 20px;
 }
 .App-header {
   background: url("../img/header_back.png");
-  background-size: 100%;
+  // background-size: 100%;
   background-repeat: no-repeat;
   // background-attachment: fixed;
   background-position: right;
@@ -14,7 +14,6 @@ $raduis-bloc: 20px;
   // height: 70vh;
   padding: 100px 0 100px 0;
   margin: 30px 30px 0 30px;
-
   position: relative;
   @include phone {
     width: 280px;
@@ -32,6 +31,7 @@ $raduis-bloc: 20px;
   }
   @include desktop-xl {
     padding: 100px 0 100px 0;
+    background-size: 100%;
   }
   // background-color: #0026bc;
   border-radius: $raduis-bloc;
@@ -81,19 +81,10 @@ $raduis-bloc: 20px;
 }
 .navbar {
   position: absolute;
-  top: 10px;
+  top: 20px;
   left: 30px;
+  margin: 0px 8px 0px 8px;
 
-  .items {
-    float: right;
-    ul li {
-      color: white;
-      font-size: 14px;
-      list-style-type: none;
-      text-align: center;
-      // padding: 25px;
-    }
-  }
   .logo {
     float: left;
     img {
@@ -101,7 +92,28 @@ $raduis-bloc: 20px;
     }
   }
 }
-
+.navbar-items {
+  float: right;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  z-index: 200;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  ul li {
+    color: white;
+    font-size: 18px;
+    list-style-type: none;
+    text-align: center;
+    margin: 0px 14px 0px 14px;
+    // padding: 25px;
+  }
+  & .button-demo {
+    margin-left: 20px;
+  }
+}
 .button-demo {
   width: 210px;
   height: 48px;

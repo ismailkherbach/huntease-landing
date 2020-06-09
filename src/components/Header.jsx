@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 const Header = () => {
   return (
     <div>
-      {/*<Navbar />*/}
+      <Navbar />
       <div className="flex fdc aic jcc">
         <h2>Increase conversion rate with the best </h2>
         <img alt="separator" src={require("../assets/img/separator.png")} />
