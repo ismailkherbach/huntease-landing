@@ -27,36 +27,38 @@ const FirstBloc = () => {
             calendar to book meetings.
           </h4>
         </div>
-        <div className="flex features fdr aic jcc">
-          {" "}
-          <FirstBlocFeature
-            text={"All-in-one"}
-            description={
-              "Huntease integrates all essential tasks sales teams need to complete, without disrupting workflow."
-            }
-            picture={"Box"}
-          />
-          <FirstBlocFeature
-            text={"Less clicks"}
-            description={
-              "Huntease minimizes the amount of clicks it takes to perform a sales call. Making it time-effecient and pleasant to use."
-            }
-            picture={"Stroke-1"}
-          />
-          <FirstBlocFeature
-            text={"Intelligent algorithms"}
-            description={
-              "With AI and Deep-learning, Huntease helps sales representatives close deals faster and more efficiently ."
-            }
-            picture={"Chart-dots"}
-          />
-          <FirstBlocFeature
-            text={"Climb to the top"}
-            description={
-              "Huntease creates a healthy competitive environment for sales teams to compete, earn points and earn rewards."
-            }
-            picture={"Crown"}
-          />
+        <div className="container flex aic jcc">
+          <div className="flex features fdr aic jcc">
+            {" "}
+            <FirstBlocFeature
+              text={"All-in-one"}
+              description={
+                "Huntease integrates all essential tasks sales teams need to complete, without disrupting workflow."
+              }
+              picture={"Box"}
+            />
+            <FirstBlocFeature
+              text={"Less clicks"}
+              description={
+                "Huntease minimizes the amount of clicks it takes to perform a sales call. Making it time-effecient and pleasant to use."
+              }
+              picture={"Stroke-1"}
+            />
+            <FirstBlocFeature
+              text={"Intelligent algorithms"}
+              description={
+                "With AI and Deep-learning, Huntease helps sales representatives close deals faster and more efficiently ."
+              }
+              picture={"Chart-dots"}
+            />
+            <FirstBlocFeature
+              text={"Climb to the top"}
+              description={
+                "Huntease creates a healthy competitive environment for sales teams to compete, earn points and earn rewards."
+              }
+              picture={"Crown"}
+            />
+          </div>
         </div>
       </div>
     </div>
