@@ -141,8 +141,8 @@ $raduis-bloc: 20px;
     padding-left: 5%;
     padding-right: 5%;
     .inner-text-bloc {
-      padding-top: 5%;
-      padding-bottom: 10%;
+      padding-top: 75px;
+      padding-bottom: 140px;
       padding-left: 5%;
       padding-right: 5%;
       width: 90%;
@@ -169,32 +169,45 @@ $raduis-bloc: 20px;
 
     .features {
       flex-wrap: wrap;
-      width: 70%;
+      width: 90%;
       @include desktop-lg {
         width: 100%;
       }
       @include desktop-xl {
         width: 100%;
       }
-      margin-bottom: 10%;
+      @include desktop-sm {
+        width: 100%;
+      }
+      @include desktop-xs {
+        width: 60%;
+      }
+      @include desktop-md {
+        width: 100%;
+      }
+      margin-bottom: 140px;
       .feature {
         // margin-bottom: 5%;
         // margin-left: 40px;
-        padding: 0 5px 0 5px;
-        width: 300px;
+        padding: 10px 5px 0 5px;
+        width: 250px;
 
         p {
           color: #8c96cf;
           font-size: 16px;
           text-align: center;
           font-weight: 300;
+          margin: 0;
+          padding: 0;
         }
         h5 {
           color: #0026bc;
           font-size: 25px;
           text-align: center;
           font-weight: 300;
-          padding: 15px 0 15px 0;
+          margin: 0;
+          padding: 0;
+          padding: 30px 0 30px 0;
         }
         img {
           width: 90px;
@@ -207,59 +220,71 @@ $raduis-bloc: 20px;
 .second-bloc {
   width: 90%;
   // flex-wrap: wrap;
+  margin: 100px 0 80px 0;
   .switch-bloc {
     flex-wrap: wrap;
     width: 70%;
     @include desktop-lg {
       width: 100%;
     }
+    @include desktop-xs {
+      width: 110%;
+    }
+    @include desktop-sm {
+      width: 100%;
+    }
+    @include desktop-md {
+      width: 100%;
+    }
     @include desktop-xl {
       width: 100%;
     }
     .switch-feature-button {
-      width: 291px;
-      height: 71px;
+      width: 230px;
+      height: 60px;
       background-color: white;
       border-radius: 55px;
-      margin: 0 10px 0px 10px;
-      margin-top: 10%;
+      margin: 5px 10px 80px 10px;
 
       cursor: pointer;
       .Text {
         color: #0026bc;
-        font-size: 22px;
+        font-size: 18px;
         text-align: center;
         padding: 0 25px 0 27px;
         font-weight: 400;
       }
       .circle-inner {
-        width: 58px;
-        height: 58px;
+        width: 40px;
+        height: 40px;
         background-color: #d9dcef;
         border-radius: 50%;
         margin-left: 10px;
         // float: left;
+      }
+      img {
+        width: 30px;
       }
     }
   }
   .bloc-container {
     padding-left: 0%;
     padding-right: 0%;
-    margin: 10% 0 10% 0;
+    margin: 0 0 0 0;
     flex-wrap: wrap;
     //width: 100%;
     img {
       margin: 0;
-      padding-right: 3%;
-      //   padding-left: 2%;
-      width: 50%;
+      padding-right: 4%;
+      padding-left: 4%;
+      width: 40%;
     }
     .blocs {
       //margin-left: 10%;
 
       h3 {
         color: #0026bc;
-        font-size: 38px;
+        font-size: 46px;
         text-align: left;
         font-weight: 300;
         padding: 0;
@@ -280,6 +305,9 @@ $raduis-bloc: 20px;
         padding: 0;
         width: 30%;
         padding-bottom: 30px;
+      }
+      .sepa {
+        width: 250px;
       }
 
       .button-demo-two {
@@ -315,7 +343,7 @@ $raduis-bloc: 20px;
   background-color: #0026bc;
   border-radius: $raduis-bloc;
   flex-wrap: wrap;
-  padding: 8% 0 8% 0;
+  padding: 4% 0 4% 0;
   .inner-Text {
     padding: 0 5% 0 5%;
     h2 {
@@ -356,13 +384,13 @@ $raduis-bloc: 20px;
   // background-attachment: fixed;
   background-position: right;
   width: 96%;
-  height: 1034px;
-  margin: 2%;
+  //height: 1034px;
+  //margin: 0 0 0 0;
   background-color: white;
   border-radius: $raduis-bloc;
   // padding-left: 350px;
-  right: 0;
-  padding-top: 5%;
+  padding-top: 70px;
+  padding-bottom: 70px;
   h2 {
     color: #0026bc;
     font-size: 38px;
@@ -376,12 +404,16 @@ $raduis-bloc: 20px;
     font-size: 21px;
     text-align: center;
     font-weight: 300;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
   .separator {
     width: 15%;
   }
   img {
-    width: 70%;
+    width: 55%;
+    margin: 0;
+    padding: 0;
   }
 }
 .FAQ {
@@ -390,14 +422,14 @@ $raduis-bloc: 20px;
   // background-attachment: fixed;
   background-position: right;
   width: 96%;
-  height: 800px;
-  margin: 2%;
+  //height: 800px;
+  margin: 0px 0px 10px 0;
   background-color: white;
   border-radius: $raduis-bloc;
   // padding-left: 350px;
   right: 0;
   padding-top: 5%;
-  padding-bottom: 7%;
+  padding-bottom: 5%;
   @include phone {
     padding-bottom: 450px;
     height: 600px;
@@ -409,6 +441,20 @@ $raduis-bloc: 20px;
   @include desktop-xs {
     padding-bottom: 20%;
   }
+  @include desktop-sm {
+    padding-bottom: 15%;
+  }
+
+  @include desktop-md {
+    padding-bottom: 15%;
+  }
+  @include desktop-lg {
+    padding-bottom: 15%;
+  }
+  @include desktop-xl {
+    padding-bottom: 15%;
+  }
+
   position: relative;
   h2 {
     color: #0026bc;
@@ -417,6 +463,7 @@ $raduis-bloc: 20px;
     font-weight: 300;
     margin: 0;
     padding: 0;
+    padding-bottom: 40px;
   }
   .container {
     width: 100%;
@@ -424,15 +471,16 @@ $raduis-bloc: 20px;
 
   .question-container {
     flex-wrap: wrap;
-    width: 100%;
+    // width: 80%;
+    //padding: 0 4% 0 4%;
     @include phone {
       flex-wrap: wrap;
     }
-    padding-top: 5%;
+    //padding-top: 5%;
     .question-bloc {
       // background-color: white;
-      height: 98px;
-      width: 540px;
+      height: 80px;
+      width: 530px;
       border-radius: 161px;
       border: 2px solid #8c96cf;
       z-index: 200;
@@ -462,17 +510,17 @@ $raduis-bloc: 20px;
     background-position: right;
     width: 1306px;
     height: 406px;
+    border-radius: 20px;
+
     @include phone {
       width: 280px;
       height: 406px;
       background-color: #0026bc;
-      border-radius: $raduis-bloc;
     }
     @include Tablet {
       width: 280px;
       height: 406px;
       background-color: #0026bc;
-      border-radius: $raduis-bloc;
     }
     @include desktop-lg {
       width: 734px;
@@ -497,6 +545,8 @@ $raduis-bloc: 20px;
       font-size: 46px;
       text-align: center;
       font-weight: 400;
+      margin: 0;
+      padding: 0;
     }
     img {
       width: 183px;
@@ -526,8 +576,8 @@ $raduis-bloc: 20px;
   }
 }
 .Bloc-five {
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   .plans {
     flex-wrap: wrap;
     position: relative;
@@ -572,10 +622,11 @@ $raduis-bloc: 20px;
         height: 269px !important;
       }
       width: 390px;
-      height: 693px;
+      //  height: 693px;
       background-color: white;
       border-radius: $raduis-bloc;
       //padding: 14px 14px 14px 14px;
+      padding-bottom: 16px;
       @include phone {
         width: 340px;
 

@@ -17,6 +17,8 @@ const FAQ = () => {
               2. Is it possible to integrate Huntease with my favorite CRM?
             </h4>
           </div>
+        </div>
+        <div className="question-container flex aic jcc">
           <div className="question-bloc flex aic jcc">
             <h4>3. Does Huntease offer integrated VoIP?</h4>
           </div>
@@ -25,6 +27,8 @@ const FAQ = () => {
               4. What sets Huntease apart from other Cloud calling services?
             </h4>
           </div>
+        </div>
+        <div className="question-container flex aic jcc">
           <div className="question-bloc flex aic jcc">
             <h4>
               5. My prospects speak different languages, is this a problem?

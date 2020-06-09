@@ -2,7 +2,7 @@ import React from "react";
 
 const BlocFor = () => {
   return (
-    <div className="bloc-for-container flex fdc aic jcc">
+    <div className="bloc-for-container flex fdc aic jcfs">
       <h2>Integrations that fit into your workflow</h2>
       <img
         className="flex fdrr jcfe separator"
