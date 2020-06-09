@@ -13,8 +13,9 @@ $raduis-bloc: 20px;
   width: 96%;
   // height: 70vh;
   padding: 100px 0 100px 0;
-  margin: 2%;
+  margin: 2% 2% 0 2%;
   margin-top: 10px;
+  margin-bottom: 0px;
   position: relative;
   @include phone {
     width: 280px;
