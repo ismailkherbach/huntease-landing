@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/huntease-landing/static/css/main.60c10702.chunk.css",
-    "main.js": "/huntease-landing/static/js/main.1f39831b.chunk.js",
-    "main.js.map": "/huntease-landing/static/js/main.1f39831b.chunk.js.map",
+    "main.css": "/huntease-landing/static/css/main.738c2303.chunk.css",
+    "main.js": "/huntease-landing/static/js/main.c170ab91.chunk.js",
+    "main.js.map": "/huntease-landing/static/js/main.c170ab91.chunk.js.map",
     "runtime-main.js": "/huntease-landing/static/js/runtime-main.f6521478.js",
     "runtime-main.js.map": "/huntease-landing/static/js/runtime-main.f6521478.js.map",
-    "static/js/2.fd7a16cf.chunk.js": "/huntease-landing/static/js/2.fd7a16cf.chunk.js",
-    "static/js/2.fd7a16cf.chunk.js.map": "/huntease-landing/static/js/2.fd7a16cf.chunk.js.map",
+    "static/js/2.c5b07a41.chunk.js": "/huntease-landing/static/js/2.c5b07a41.chunk.js",
+    "static/js/2.c5b07a41.chunk.js.map": "/huntease-landing/static/js/2.c5b07a41.chunk.js.map",
     "index.html": "/huntease-landing/index.html",
-    "precache-manifest.d6f0e81f54e92d04693edccb53918b27.js": "/huntease-landing/precache-manifest.d6f0e81f54e92d04693edccb53918b27.js",
+    "precache-manifest.050da486997c429895f88baa4286142b.js": "/huntease-landing/precache-manifest.050da486997c429895f88baa4286142b.js",
     "service-worker.js": "/huntease-landing/service-worker.js",
-    "static/css/main.60c10702.chunk.css.map": "/huntease-landing/static/css/main.60c10702.chunk.css.map",
-    "static/js/2.fd7a16cf.chunk.js.LICENSE.txt": "/huntease-landing/static/js/2.fd7a16cf.chunk.js.LICENSE.txt",
+    "static/css/main.738c2303.chunk.css.map": "/huntease-landing/static/css/main.738c2303.chunk.css.map",
+    "static/js/2.c5b07a41.chunk.js.LICENSE.txt": "/huntease-landing/static/js/2.c5b07a41.chunk.js.LICENSE.txt",
     "static/media/Box.svg": "/huntease-landing/static/media/Box.3a5b2caa.svg",
     "static/media/Chart-dots.svg": "/huntease-landing/static/media/Chart-dots.8243a606.svg",
     "static/media/Crown.svg": "/huntease-landing/static/media/Crown.c4181fc7.svg",
@@ -35,8 +35,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.f6521478.js",
-    "static/js/2.fd7a16cf.chunk.js",
-    "static/css/main.60c10702.chunk.css",
-    "static/js/main.1f39831b.chunk.js"
+    "static/js/2.c5b07a41.chunk.js",
+    "static/css/main.738c2303.chunk.css",
+    "static/js/main.c170ab91.chunk.js"
   ]
 }
