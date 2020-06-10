@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "65a461e53f3856a9ecc378f03907ed0b",
+    "revision": "aa6de497979614755d1f21c2668ebf96",
     "url": "/huntease-landing/index.html"
   },
   {
-    "revision": "6ea162ae9ebcab6b2ac4",
-    "url": "/huntease-landing/static/css/main.a5f5f6b7.chunk.css"
+    "revision": "83bf1add5d90342d1ec8",
+    "url": "/huntease-landing/static/css/main.fd698d77.chunk.css"
   },
   {
     "revision": "eba94a8aa0920f0d0f12",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/huntease-landing/static/js/2.20e0545a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6ea162ae9ebcab6b2ac4",
-    "url": "/huntease-landing/static/js/main.176ce829.chunk.js"
+    "revision": "83bf1add5d90342d1ec8",
+    "url": "/huntease-landing/static/js/main.cc91f9bc.chunk.js"
   },
   {
     "revision": "d080fe51d7783fc3a3e7",
@@ -42,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "35a41c4b02f3bb1e102a3ef2cc562809",
     "url": "/huntease-landing/static/media/Urbanist-Bold.35a41c4b.ttf"
+  },
+  {
+    "revision": "41bfb8ef6f229cdccd496183895f7c5b",
+    "url": "/huntease-landing/static/media/Urbanist-ExtraBold.41bfb8ef.ttf"
   },
   {
     "revision": "c42a7543b01fa5bc766a671a0e601738",
