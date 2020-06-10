@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cb95e80578e41b802b07cb9fda9a1706",
+    "revision": "e16254b88a3093d7631a64519c98e27e",
     "url": "/huntease-landing/index.html"
   },
   {
-    "revision": "4ae96810d46ea40f5f15",
-    "url": "/huntease-landing/static/css/main.c8057143.chunk.css"
+    "revision": "a4cd305a310cace7e45c",
+    "url": "/huntease-landing/static/css/main.9ee3110f.chunk.css"
   },
   {
-    "revision": "e14c001bddc894b23c72",
-    "url": "/huntease-landing/static/js/2.c5b07a41.chunk.js"
+    "revision": "e56c9864395cccceb341",
+    "url": "/huntease-landing/static/js/2.1516dcca.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/huntease-landing/static/js/2.c5b07a41.chunk.js.LICENSE.txt"
+    "url": "/huntease-landing/static/js/2.1516dcca.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4ae96810d46ea40f5f15",
-    "url": "/huntease-landing/static/js/main.755452ec.chunk.js"
+    "revision": "a4cd305a310cace7e45c",
+    "url": "/huntease-landing/static/js/main.0836a3ff.chunk.js"
   },
   {
     "revision": "d080fe51d7783fc3a3e7",
@@ -38,6 +38,30 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2dc72db0fce15b0ba27296588704791f",
     "url": "/huntease-landing/static/media/Stroke-1.2dc72db0.svg"
+  },
+  {
+    "revision": "35a41c4b02f3bb1e102a3ef2cc562809",
+    "url": "/huntease-landing/static/media/Urbanist-Bold.35a41c4b.ttf"
+  },
+  {
+    "revision": "c42a7543b01fa5bc766a671a0e601738",
+    "url": "/huntease-landing/static/media/Urbanist-Light.c42a7543.ttf"
+  },
+  {
+    "revision": "076933995cf788aeeff8dcf51f36fe14",
+    "url": "/huntease-landing/static/media/Urbanist-Regular.07693399.ttf"
+  },
+  {
+    "revision": "f05fec0bc4b57f937049ef3f9060b2c7",
+    "url": "/huntease-landing/static/media/Urbanist-SemiBold.f05fec0b.ttf"
+  },
+  {
+    "revision": "343b328dfccc02408bc62fc401c569b2",
+    "url": "/huntease-landing/static/media/Urbanist-Thin.343b328d.ttf"
+  },
+  {
+    "revision": "14f785b510b30d9edda78a7b9afd5c09",
+    "url": "/huntease-landing/static/media/UrbanistGX.14f785b5.ttf"
   },
   {
     "revision": "b387f4f6c2d79a773a375ad6ed86d579",
