@@ -1,4 +1,15 @@
 @import "./_mixins.scss";
+@include font("Urbanist-Bold", "../fonts/Urbanist-Bold");
+@include font("Urbanist-SemiBold", "../fonts/Urbanist-SemiBold");
+@include font("Urbanist-Light", "../fonts/Urbanist-Light");
+@include font("Urbanist-Regular", "../fonts/Urbanist-Regular");
+@include font("Urbanist-Thin", "../fonts/Urbanist-Thin");
+
+$font-regular: "Urbanist-Regular";
+$font-thin: "Urbanist-thin";
+$font-light: "Urbanist-light";
+$font-bold: "Urbanist-bold";
+
 $raduis-bloc: 20px;
 .App {
   text-align: center;
@@ -38,10 +49,11 @@ $raduis-bloc: 20px;
   border-radius: $raduis-bloc;
   position: relative;
   h2 {
+    font-family: "Urbanist-Regular";
     color: white;
     font-size: 55px;
     text-align: center;
-    font-weight: 300;
+    font-weight: regular;
     margin: 0;
     padding: 0;
   }
