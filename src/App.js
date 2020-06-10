@@ -12,7 +12,7 @@ import FAQ from "./components/FAQ";
 import Popup from "./components/small.components/Popup";
 
 function App() {
-  const [popup, setPopup] = useState(false);
+  const [popup, setPopup] = useState(true);
   const tooglePopup = () => {
     setPopup(!popup);
   };

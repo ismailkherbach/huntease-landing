@@ -54,8 +54,8 @@ const text_3 = (
       Converting qualified prospects
       <br></br>into customers with smart guide.
     </h3>
-    <img alt="separator_2" src={require("../assets/img/separator.svg")} />
-
+    <br></br>
+    <br></br>
     <h5>
       With Huntease's smart conversational guide, you can create a<br></br>step
       by step script that let's you focus on one thing at a time,<br></br>and
@@ -79,8 +79,8 @@ const text_4 = (
       Access your future customers with
       <br></br>one click.
     </h3>
-    <img alt="separator_2" src={require("../assets/img/separator.svg")} />
-
+    <br></br>
+    <br></br>
     <h5>
       We know how tedious and overwhelming CRMs can get, <br></br>therefore we
       made sure that Huntease can provide quick <br></br>access to your list of
