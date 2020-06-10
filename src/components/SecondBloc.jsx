@@ -111,7 +111,7 @@ const SecondBloc = (props) => {
   const [activatedBloc, setActivatedBloc] = useState(text_1);
 
   return (
-    <div className="second-bloc flex fdc aic">
+    <div className="second-bloc flex fdc aic" id="features_bloc">
       <div className="switch-bloc flex fdr aic jcc">
         <div onClick={() => setActivatedBloc(text_1)}>
           {" "}

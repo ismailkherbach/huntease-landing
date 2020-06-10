@@ -2,7 +2,7 @@ import React from "react";
 
 const FAQ = (props) => {
   return (
-    <div className="FAQ flex fdc aic jcfs">
+    <div className="FAQ flex fdc aic jcfs" id="faq_bloc">
       <h2 className="text_s38 bold_text blue">Frequently Asked Questions</h2>
       <div className="container test_s17 light_text grey">
         <div className="question-container flex fdr jcc aic ">

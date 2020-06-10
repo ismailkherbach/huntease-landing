@@ -4,7 +4,7 @@ import Switch from "react-switch";
 const BlocPricing = (props) => {
   const [checked, SetChecked] = useState(false);
   return (
-    <div className="Bloc-five flex fdc aic jcc">
+    <div className="Bloc-five flex fdc aic jcc" id="pricing_bloc">
       <h2 className="bold_text text_s45 blue">Simple & transparent pricing</h2>
       <h4 className="text_s21 regular_text grey">
         Everything is about Freedom, and that is exactly what we are<br></br>{" "}
