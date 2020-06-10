@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/huntease-landing/static/css/main.738c2303.chunk.css",
-    "main.js": "/huntease-landing/static/js/main.1d4d73da.chunk.js",
-    "main.js.map": "/huntease-landing/static/js/main.1d4d73da.chunk.js.map",
+    "main.css": "/huntease-landing/static/css/main.c8057143.chunk.css",
+    "main.js": "/huntease-landing/static/js/main.755452ec.chunk.js",
+    "main.js.map": "/huntease-landing/static/js/main.755452ec.chunk.js.map",
     "runtime-main.js": "/huntease-landing/static/js/runtime-main.f6521478.js",
     "runtime-main.js.map": "/huntease-landing/static/js/runtime-main.f6521478.js.map",
     "static/js/2.c5b07a41.chunk.js": "/huntease-landing/static/js/2.c5b07a41.chunk.js",
     "static/js/2.c5b07a41.chunk.js.map": "/huntease-landing/static/js/2.c5b07a41.chunk.js.map",
     "index.html": "/huntease-landing/index.html",
-    "precache-manifest.5000f2b6a07eb6bc4189a2fda2264616.js": "/huntease-landing/precache-manifest.5000f2b6a07eb6bc4189a2fda2264616.js",
+    "precache-manifest.f2aa751191e3b891a3b61b88d018fc8f.js": "/huntease-landing/precache-manifest.f2aa751191e3b891a3b61b88d018fc8f.js",
     "service-worker.js": "/huntease-landing/service-worker.js",
-    "static/css/main.738c2303.chunk.css.map": "/huntease-landing/static/css/main.738c2303.chunk.css.map",
+    "static/css/main.c8057143.chunk.css.map": "/huntease-landing/static/css/main.c8057143.chunk.css.map",
     "static/js/2.c5b07a41.chunk.js.LICENSE.txt": "/huntease-landing/static/js/2.c5b07a41.chunk.js.LICENSE.txt",
     "static/media/Box.svg": "/huntease-landing/static/media/Box.3a5b2caa.svg",
     "static/media/Chart-dots.svg": "/huntease-landing/static/media/Chart-dots.8243a606.svg",
@@ -23,20 +23,20 @@
     "static/media/feat_2.svg": "/huntease-landing/static/media/feat_2.6946ee52.svg",
     "static/media/feat_3.svg": "/huntease-landing/static/media/feat_3.e64a1e9e.svg",
     "static/media/feat_4.svg": "/huntease-landing/static/media/feat_4.e64a1e9e.svg",
-    "static/media/landing.scss": "/huntease-landing/static/media/header_back.9df5eff1.png",
+    "static/media/landing.scss": "/huntease-landing/static/media/left_back.e673d70b.svg",
     "static/media/ilust_1.svg": "/huntease-landing/static/media/ilust_1.ab5e62af.svg",
     "static/media/ilust_2.svg": "/huntease-landing/static/media/ilust_2.dc9139c6.svg",
     "static/media/ilust_3.svg": "/huntease-landing/static/media/ilust_3.f2047058.svg",
     "static/media/ilust_5.svg": "/huntease-landing/static/media/ilust_5.94375d0f.svg",
     "static/media/ilust_6.svg": "/huntease-landing/static/media/ilust_6.f218b65b.svg",
     "static/media/logo-dark.svg": "/huntease-landing/static/media/logo-dark.a34c26ea.svg",
-    "static/media/logo-white-retina.svg": "/huntease-landing/static/media/logo-white-retina.cf9d27e6.svg",
+    "static/media/logo-white-retina.svg": "/huntease-landing/static/media/logo-white-retina.ed2263d6.svg",
     "static/media/separator.svg": "/huntease-landing/static/media/separator.978d1af5.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.f6521478.js",
     "static/js/2.c5b07a41.chunk.js",
-    "static/css/main.738c2303.chunk.css",
-    "static/js/main.1d4d73da.chunk.js"
+    "static/css/main.c8057143.chunk.css",
+    "static/js/main.755452ec.chunk.js"
   ]
 }
