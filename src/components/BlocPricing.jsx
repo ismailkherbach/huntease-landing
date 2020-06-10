@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
+import Switch from "react-switch";
 
 const BlocPricing = (props) => {
+  const [checked, SetChecked] = useState(false);
   return (
     <div className="Bloc-five flex fdc aic jcc">
       <h2>Simple & transparent pricing</h2>
@@ -8,6 +10,26 @@ const BlocPricing = (props) => {
         Everything is about Freedom, and that is exactly what we are<br></br>{" "}
         giving you, try all the features for Free
       </h4>
+      <div className="toggle-container flex fdr aic jcc">
+        <h3>Monthly</h3>
+        <Switch
+          offColor="white"
+          onColor="white"
+          offHandleColor="#0026BC"
+          onHandleColor="#0026BC"
+          uncheckedIcon={false}
+          checkedIcon={false}
+          className="toggle"
+          onChange={() => SetChecked(!checked)}
+          checked={checked}
+        />
+        <h3>Yearly</h3>
+        <img
+          className="green-notice"
+          alt="checked"
+          src={require("../assets/img/green-notice.svg")}
+        />
+      </div>
       <div className="plans flex fdr jcc">
         {" "}
         <div className="notice flex fdc  jcc">

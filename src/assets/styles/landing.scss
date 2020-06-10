@@ -718,6 +718,31 @@ $raduis-bloc: 20px;
 .Bloc-five {
   padding-top: 5%;
   padding-bottom: 5%;
+  .toggle-container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+
+    .toggle {
+      margin: 20px 20px 20px 20px;
+      background-color: white;
+    }
+    .green-notice {
+      position: absolute;
+      top: 0px;
+      right: -90px;
+    }
+    h3 {
+      color: #0026bc;
+      font-size: 27px;
+      text-align: center;
+      font-family: $font-bold;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
   .plans {
     flex-wrap: wrap;
     position: relative;

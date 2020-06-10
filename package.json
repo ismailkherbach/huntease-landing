@@ -12,6 +12,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "react-switch": "^5.0.1",
     "react-transition-group": "^4.4.1",
     "reactstrap": "^8.4.1",
     "websocket": "^1.0.31"
