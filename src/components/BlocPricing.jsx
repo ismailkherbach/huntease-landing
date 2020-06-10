@@ -3,6 +3,7 @@ import Switch from "react-switch";
 
 const BlocPricing = (props) => {
   const [checked, SetChecked] = useState(false);
+  const [shown, SetShown] = useState(false);
   return (
     <div className="Bloc-five flex fdc aic jcc" id="pricing_bloc">
       <h2 className="bold_text text_s45 blue">Simple & transparent pricing</h2>
@@ -36,20 +37,27 @@ const BlocPricing = (props) => {
       </div>
       <div className="plans flex fdr jcc">
         {" "}
-        <div className="notice flex fdc  jcc">
-          <div className="flex jcfs fdr">
-            <img
-              alt="checked"
-              src={require("../assets/img/awesome-info-circle.svg")}
-            />
-            <p className="text_s14 bold_text orange">Additional information</p>
+        {shown && (
+          <div
+            className="notice flex fdc  jcc"
+            onMouseLeave={() => SetShown(false)}
+          >
+            <div className="flex jcfs fdr">
+              <img
+                alt="checked"
+                src={require("../assets/img/awesome-info-circle.svg")}
+              />
+              <p className="text_s14 bold_text orange">
+                Additional information
+              </p>
+            </div>
+            <h5 className="text_s14 bold_text grey">
+              When you consume your free minutes<br></br>
+              your plan switched to<b> Pay-as-you-go</b> <br></br>with €0.05 per{" "}
+              <b>minute.</b>
+            </h5>
           </div>
-          <h5 className="text_s14 bold_text grey">
-            When you consume your free minutes<br></br>
-            your plan switched to<b> Pay-as-you-go</b> <br></br>with €0.05 per{" "}
-            <b>minute.</b>
-          </h5>
-        </div>
+        )}
         <div className="plan-container plan-container-basic flex fdc aic jcfs">
           <div className="flex fdc">
             <h2 className="text_s38 bold_text blue">Basic</h2>
@@ -160,7 +168,14 @@ const BlocPricing = (props) => {
                   src={require("../assets/img/awesome-check.svg")}
                 />
                 <p className="text_s16 regular_text dark">
-                  240 Minutes of outgoing calls for free
+                  240 Minutes of outgoing calls for free{" . "}
+                  <span onMouseEnter={() => SetShown(true)}>
+                    {" "}
+                    <img
+                      alt="checked"
+                      src={require("../assets/img/awesome-info-circle.svg")}
+                    />
+                  </span>
                 </p>
               </div>
               <div className="plan-item flex fdr jcfs">

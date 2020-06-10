@@ -1,5 +1,5 @@
 import React from "react";
-
+import { UncontrolledCollapse } from "reactstrap";
 const FAQ = (props) => {
   return (
     <div className="FAQ flex fdc aic jcfs" id="faq_bloc">
@@ -12,12 +12,15 @@ const FAQ = (props) => {
               version?
             </h4>
           </div>
-          <div className="question-bloc flex aic jcc">
+          <div className="question-bloc flex aic jcc" id="toggler">
             <h4>
               2. Is it possible to integrate Huntease with my favorite CRM?
             </h4>
           </div>
         </div>
+        {/* <UncontrolledCollapse toggler="toggler">
+          <h3>Hello</h3>
+  </UncontrolledCollapse>*/}
         <div className="question-container flex aic jcc">
           <div className="question-bloc flex aic jcc">
             <h4>3. Does Huntease offer integrated VoIP?</h4>

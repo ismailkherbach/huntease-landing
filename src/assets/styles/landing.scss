@@ -28,7 +28,7 @@ $raduis-bloc: 20px;
   background-position: right;
   width: 96%;
   // height: 70vh;
-  padding: 100px 0 100px 0;
+  padding: 150px 0 100px 0;
   margin: 30px 30px 0 30px;
   position: relative;
   @include phone {
@@ -92,7 +92,7 @@ $raduis-bloc: 20px;
 }
 .navbar {
   position: absolute;
-  top: 20px;
+  top: 30px;
   left: 30px;
   margin: 0px 8px 0px 8px;
 
@@ -141,6 +141,7 @@ $raduis-bloc: 20px;
     padding: 20px;
   }
   ul li {
+    font-size: 18px;
     list-style-type: none;
     text-align: center;
     margin: 0px 25px 0px 25px;
@@ -290,6 +291,9 @@ $raduis-bloc: 20px;
       width: 40%;
       // position: absolute;
       right: -120px;
+      @include phone {
+        width: 60%;
+      }
     }
     .blocs {
       width: 600px;
@@ -394,6 +398,9 @@ $raduis-bloc: 20px;
       padding-right: 50px;
       //padding-left: 50px;
       width: 50%;
+      @include phone {
+        width: 60%;
+      }
     }
 
     .blocs {
@@ -402,6 +409,7 @@ $raduis-bloc: 20px;
       height: 500px;
       @include phone {
         width: 300px;
+        height: 300px;
       }
 
       h3 {
@@ -515,6 +523,9 @@ $raduis-bloc: 20px;
     width: 40%;
     margin: 0;
     padding: 0;
+    @include phone {
+      width: 65%;
+    }
   }
 }
 .FAQ {
@@ -831,6 +842,9 @@ $raduis-bloc: 20px;
 
     //  margin: 0 14px 0 14px;
   }
+  @include phone {
+    padding-top: 130%;
+  }
   .items {
     padding: 15% 0 15% 0;
 
@@ -899,7 +913,7 @@ $raduis-bloc: 20px;
 }
 .popup {
   display: inline-block;
-  width: 500px;
+  max-width: 500px;
   height: 700px;
   border-radius: $raduis-bloc;
   background-color: #0026bc;
@@ -909,6 +923,9 @@ $raduis-bloc: 20px;
   @include desktop-xl {
     width: 628px;
     //  height: 834px;
+  }
+  @include desktop-md {
+    // height: 670px;
   }
   .top_left {
     background-image: url("../left_back.svg");

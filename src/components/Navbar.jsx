@@ -7,10 +7,15 @@ const Navbar = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="flex fdr aic jcfs">
+    <div className="flex fdr aic jcc">
       <div className="navbar logo flex jcc" onClick={toggle}>
         {" "}
-        <img alt="logo" src={require("../assets/img/logo-white-retina.svg")} />
+        <img
+          alt="logo"
+          src={require(`../assets/img/${
+            size.width > 900 ? "logo-white-retina" : "logo_mobile"
+          }.svg`)}
+        />
       </div>
 
       {size.width > 900 && (
@@ -71,7 +76,7 @@ const Navbar = (props) => {
       )}
       {isOpen ? (
         <div className="navbar-items-toggled flex fdc jcc aifs ">
-          <ul className="flex fdc aifs text_s18 white semi_bold_text">
+          <ul className="flex fdc aifs white semi_bold_text">
             <li>Features</li>
             <li>Pricing</li>
             <li>Faq</li>
