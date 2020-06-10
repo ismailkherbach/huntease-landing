@@ -5,17 +5,19 @@ const FirstBloc = () => {
   return (
     <div className="first-bloc-container flex fdc jcc aic">
       {" "}
-      <h5 className="flex aic jcc">
+      <h5 className="flex aic jcc bold_text orange text_s24">
         "On a traditional CRM, it takes an average of 6 clicks to make a call."
       </h5>
-      <div className="first-bloc-inner  flex fdc aifs jcfs">
+      <div className="first-bloc-inner  flex fdc aic jcc">
         {" "}
-        <div className="inner-text-bloc flex fdc ">
+        <div className="inner-text-bloc flex fdc aifs jcfs">
           {" "}
-          <h2>All you need</h2>
+          <h2 className="blue bold_text text_s55">All you need</h2>
           <img alt="separator_2" src={require("../assets/img/separator.svg")} />
-          <h2>for your cold-calling campaigns.</h2>
-          <h4>
+          <h2 className="blue bold_text text_s55">
+            for your cold-calling campaigns.
+          </h2>
+          <h4 className="grey text_24 semi_bold_text">
             Huntease is a sales-calling software that employs AI to help sales
             <br></br>
             teams grow and be more productive. With an interface that's<br></br>

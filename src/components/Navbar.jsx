@@ -15,7 +15,7 @@ const Navbar = (props) => {
 
       {size.width > 900 && (
         <div className="navbar-items flex fdr jcc ">
-          <ul className="flex fdr aic">
+          <ul className="flex fdr aic text_s18 white semi_bold_text">
             <li>Features</li>
             <li>Pricing</li>
             <li>Faq</li>
@@ -38,7 +38,7 @@ const Navbar = (props) => {
       )}
       {isOpen ? (
         <div className="navbar-items-toggled flex fdc jcc aifs ">
-          <ul className="flex fdc aifs">
+          <ul className="flex fdc aifs text_s18 white semi_bold_text">
             <li>Features</li>
             <li>Pricing</li>
             <li>Faq</li>

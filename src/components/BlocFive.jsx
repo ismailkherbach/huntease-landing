@@ -5,13 +5,16 @@ const BlocFive = () => {
     <div className="bloc-5 flex fdc aic">
       <div className="bloc-container flex fdr aic jcc">
         <div className="blocs flex aifs jcc fdc">
-          <h3>Competitive</h3>{" "}
+          <h3 className="text_s46 bold_text blue">Competitive</h3>{" "}
           <img alt="separator_2" src={require("../assets/img/separator.svg")} />
-          <h3> environment for your sales team.</h3>
-          <h5>
-            Huntease is a platform centered around gamification and teamwork
-            which creates a healthy competitive environment for SDR teams to
-            boost their productivity and acquire more clients while having fun.
+          <h3 className="text_s46 bold_text blue">
+            environment for your sales team.
+          </h3>
+          <h5 className="text_s24 regular_text grey">
+            Huntease is a platform centered around{" "}
+            <span className="blue">gamification</span> and teamwork which
+            creates a healthy competitive environment for SDR teams to boost
+            their productivity and acquire more clients while having fun.
           </h5>
         </div>
         <img

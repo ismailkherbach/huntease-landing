@@ -4,11 +4,15 @@
 @include font("Urbanist-Light", "../fonts/Urbanist-Light");
 @include font("Urbanist-Regular", "../fonts/Urbanist-Regular");
 @include font("Urbanist-Thin", "../fonts/Urbanist-Thin");
+@include font("Urbanist-ExtraBold", "../fonts/Urbanist-ExtraBold");
 
 $font-regular: "Urbanist-Regular";
 $font-thin: "Urbanist-thin";
 $font-light: "Urbanist-light";
 $font-bold: "Urbanist-bold";
+$font-extra-bold: "Urbanist-ExtraBold";
+$font-semi-bold: "Urbanist-SemiBold";
+$small-screen: "(max-width : 991px)";
 
 $raduis-bloc: 20px;
 .App {
@@ -49,19 +53,13 @@ $raduis-bloc: 20px;
   border-radius: $raduis-bloc;
   position: relative;
   h2 {
-    font-family: "Urbanist-Regular";
-    color: white;
-    font-size: 55px;
     text-align: center;
     font-weight: regular;
     margin: 0;
     padding: 0;
   }
   h4 {
-    color: #a4acdf;
-    font-size: 22px;
     text-align: center;
-    font-weight: 300;
   }
   .ilust_1 {
     //width: 40%;
@@ -116,8 +114,6 @@ $raduis-bloc: 20px;
     padding: 0;
   }
   ul li {
-    color: white;
-    font-size: 18px;
     list-style-type: none;
     text-align: center;
     margin: 0px 14px 0px 14px;
@@ -143,8 +139,6 @@ $raduis-bloc: 20px;
     padding: 20px;
   }
   ul li {
-    color: white;
-    font-size: 18px;
     list-style-type: none;
     text-align: center;
     margin: 0px 25px 0px 25px;
@@ -196,33 +190,30 @@ $raduis-bloc: 20px;
   // padding-left: 350px;
   right: 0;
   h5 {
-    color: #ffa780;
-    font-size: 22px;
     text-align: center;
-    font-weight: 300;
   }
   .first-bloc-inner {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 100%;
     .inner-text-bloc {
       padding-top: 75px;
       padding-bottom: 140px;
       padding-left: 5%;
       padding-right: 5%;
-      width: 90%;
+      @include desktop-xl {
+        padding-left: 3%;
+        padding-right: 3%;
+        width: 70%;
+      }
+      width: 80%;
       h2 {
-        color: #0026bc;
-        font-size: 55px;
         text-align: left;
-        font-weight: 300;
         margin: 0;
         padding: 0;
       }
       h4 {
-        color: #8c96cf;
-        font-size: 22px;
         text-align: left;
-        font-weight: 300;
       }
       img {
         width: 274.78px;
@@ -230,52 +221,49 @@ $raduis-bloc: 20px;
         padding: 0;
       }
     }
-
-    .features {
-      flex-wrap: wrap;
-      width: 90%;
-      @include desktop-lg {
-        width: 100%;
-      }
-      @include desktop-xl {
-        width: 100%;
-      }
-      @include desktop-sm {
-        width: 100%;
-      }
-      @include desktop-xs {
-        width: 60%;
-      }
-      @include desktop-md {
-        width: 100%;
-      }
-      margin-bottom: 140px;
-      .feature {
-        // margin-bottom: 5%;
-        // margin-left: 40px;
-        padding: 10px 5px 0 5px;
-        width: 250px;
-
-        p {
-          color: #8c96cf;
-          font-size: 16px;
-          text-align: center;
-          font-weight: 300;
-          margin: 0;
-          padding: 0;
+    .container {
+      width: 100%;
+      .features {
+        flex-wrap: wrap;
+        // width: 90%;
+        @include desktop-lg {
+          width: 100%;
         }
-        h5 {
-          color: #0026bc;
-          font-size: 25px;
-          text-align: center;
-          font-weight: 300;
-          margin: 0;
-          padding: 0;
-          padding: 30px 0 30px 0;
+        @include desktop-xl {
+          width: 100%;
         }
-        img {
-          width: 90px;
-          height: 90px;
+        @include desktop-sm {
+          width: 100%;
+        }
+        @include desktop-xs {
+          width: 60%;
+        }
+        @include desktop-md {
+          width: 100%;
+        }
+        margin-bottom: 140px;
+        .feature {
+          // margin-bottom: 5%;
+          // margin-left: 40px;
+          padding: 10px 25px 0 25px;
+          width: 250px;
+
+          p {
+            text-align: center;
+
+            margin: 0;
+            padding: 0;
+          }
+          h5 {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            padding: 30px 0 30px 0;
+          }
+          img {
+            width: 90px;
+            height: 90px;
+          }
         }
       }
     }
@@ -303,21 +291,15 @@ $raduis-bloc: 20px;
     .blocs {
       width: 600px;
       height: 450px;
-
+      padding: 0 15px 0 15px;
       h3 {
-        color: #0026bc;
-        font-size: 38px;
         text-align: left;
-        font-weight: 300;
         padding: 0;
         margin: 0;
         //margin-left: 10%;
       }
       h5 {
-        color: #8c96cf;
-        font-size: 18px;
         text-align: left;
-        font-weight: 300;
         padding: 0;
         margin: 0;
         padding-top: 50px;
@@ -339,10 +321,7 @@ $raduis-bloc: 20px;
         border-radius: 24px;
         cursor: pointer;
         .Text-inner {
-          color: #0026bc;
-          font-size: 18px;
           text-align: center;
-          font-weight: 400;
           padding: 0 5px 0 5px;
         }
         img {
@@ -387,11 +366,8 @@ $raduis-bloc: 20px;
 
       cursor: pointer;
       .Text {
-        color: #0026bc;
-        font-size: 18px;
         text-align: center;
         padding: 0 25px 0 27px;
-        font-weight: 400;
       }
       .circle-inner {
         width: 40px;
@@ -421,21 +397,18 @@ $raduis-bloc: 20px;
       //margin-left: 10%;
       width: 550px;
       height: 500px;
+      @include phone {
+        width: 300px;
+      }
 
       h3 {
-        color: #0026bc;
-        font-size: 38px;
         text-align: left;
-        font-weight: 300;
         padding: 0;
         margin: 0;
         //margin-left: 10%;
       }
       h5 {
-        color: #8c96cf;
-        font-size: 18px;
         text-align: left;
-        font-weight: 300;
         padding: 0;
         margin: 0;
         //  margin-left: 10%;
@@ -458,10 +431,7 @@ $raduis-bloc: 20px;
         border-radius: 24px;
         cursor: pointer;
         .Text-inner {
-          color: #0026bc;
-          font-size: 18px;
           text-align: center;
-          font-weight: 400;
           padding: 0 5px 0 5px;
         }
         img {
@@ -487,18 +457,12 @@ $raduis-bloc: 20px;
   .inner-Text {
     padding: 0 5% 0 5%;
     h2 {
-      color: white;
-      font-size: 38px;
       text-align: left;
-      font-weight: 300;
       margin: 0;
       padding: 0;
     }
     h4 {
-      color: #a4acdf;
-      font-size: 18px;
       text-align: left;
-      font-weight: 300;
     }
   }
 
@@ -532,18 +496,12 @@ $raduis-bloc: 20px;
   padding-top: 70px;
   padding-bottom: 70px;
   h2 {
-    color: #0026bc;
-    font-size: 38px;
     text-align: center;
-    font-weight: 300;
     margin: 0;
     padding: 0;
   }
   h4 {
-    color: #8c96cf;
-    font-size: 21px;
     text-align: center;
-    font-weight: 300;
     padding-bottom: 0;
     margin-bottom: 0;
   }
@@ -551,7 +509,7 @@ $raduis-bloc: 20px;
     width: 15%;
   }
   img {
-    width: 55%;
+    width: 40%;
     margin: 0;
     padding: 0;
   }
@@ -597,10 +555,7 @@ $raduis-bloc: 20px;
 
   position: relative;
   h2 {
-    color: #0026bc;
-    font-size: 38px;
     text-align: center;
-    font-weight: 300;
     margin: 0;
     padding: 0;
     padding-bottom: 40px;
@@ -628,10 +583,7 @@ $raduis-bloc: 20px;
       padding: 0px 5px 0px 5px;
 
       h4 {
-        color: #8c96cf;
-        font-size: 18px;
         text-align: center;
-        font-weight: 300;
       }
     }
   }
@@ -681,10 +633,7 @@ $raduis-bloc: 20px;
     position: absolute;
     bottom: -200px;
     h2 {
-      color: white;
-      font-size: 46px;
       text-align: center;
-      font-weight: 400;
       margin: 0;
       padding: 0;
     }
@@ -699,10 +648,7 @@ $raduis-bloc: 20px;
       margin-top: 40px;
       cursor: pointer;
       .Text-inner {
-        color: #0026bc;
-        font-size: 18px;
         text-align: center;
-        font-weight: 400;
         padding: 0 5px 0 5px;
       }
       img {
@@ -732,12 +678,12 @@ $raduis-bloc: 20px;
       position: absolute;
       top: 0px;
       right: -90px;
+      @include phone {
+        right: -60px;
+      }
     }
     h3 {
-      color: #0026bc;
-      font-size: 27px;
       text-align: center;
-      font-family: $font-bold;
       margin: 0;
       padding: 0;
     }
@@ -758,10 +704,7 @@ $raduis-bloc: 20px;
       z-index: 100;
       padding: 0 0 0 15px;
       p {
-        color: #ffa780;
-        font-size: 14px;
         text-align: left;
-        font-weight: 400;
         line-height: normal;
         margin: 0;
         padding: 0;
@@ -769,10 +712,7 @@ $raduis-bloc: 20px;
         padding-bottom: 8px;
       }
       h5 {
-        color: #8c96cf;
-        font-size: 14px;
         text-align: left;
-        font-weight: 400;
         line-height: normal;
 
         margin: 0;
@@ -816,8 +756,7 @@ $raduis-bloc: 20px;
         width: 210px;
         height: 48px;
         background-color: #0026bc;
-        color: white;
-        font-size: 18px;
+
         text-align: center;
         border-radius: 24px;
         cursor: pointer;
@@ -833,18 +772,13 @@ $raduis-bloc: 20px;
         padding: 14px 14px 14px 14px;
         .plan-item {
           p {
-            color: #0026bc;
-            font-size: 16px;
             text-align: left;
-            font-weight: 400;
             padding: 5px;
             line-height: 2.7;
             margin: 0;
             padding: 0;
             padding-left: 14px;
             padding-right: 5px;
-          }
-          img {
           }
         }
       }
@@ -855,46 +789,33 @@ $raduis-bloc: 20px;
       }
       h4 {
         text-align: left;
-        font-size: 16px;
         padding-left: 14px;
         padding-right: 5px;
       }
     }
   }
   h5 {
-    color: #8c96cf;
-    font-size: 16px;
     text-align: left;
-    font-weight: 300;
     line-height: 3;
     margin: 0;
     padding-left: 14px;
     padding-right: 5px;
   }
   h1 {
-    color: #0026bc;
-    font-size: 90px;
     text-align: left;
-    font-weight: 400;
     margin: 0;
     padding: 0;
     padding-left: 14px;
     padding-right: 5px;
   }
   h2 {
-    color: #0026bc;
-    font-size: 45px;
     text-align: center;
-    font-weight: 400;
 
     margin: 0;
     padding: 0;
   }
   h4 {
-    color: #8c96cf;
-    font-size: 21px;
     text-align: center;
-    font-weight: 300;
   }
 }
 
@@ -915,8 +836,6 @@ $raduis-bloc: 20px;
       margin: 0;
     }
     ul li {
-      color: #1a237e;
-      font-size: 18px;
       list-style-type: none;
       text-align: center;
       margin: 0 5px 0 5px;
@@ -925,8 +844,6 @@ $raduis-bloc: 20px;
     }
   }
   p {
-    color: #8c96cf;
-    font-size: 18px;
     list-style-type: none;
     text-align: center;
   }
@@ -996,14 +913,10 @@ $raduis-bloc: 20px;
       padding: 0px 70px 0 70px;
     }
     h3 {
-      color: white;
-      font-size: 24px;
       list-style-type: none;
       text-align: center;
     }
     p {
-      color: #8c96cf;
-      font-size: 16px;
       text-align: center;
       padding-bottom: 20px;
     }
@@ -1019,7 +932,6 @@ $raduis-bloc: 20px;
       padding: 0;
       padding-left: 30px;
       margin: 8px 0 20px 0;
-
       color: white;
       font-size: 16px;
       z-index: 5000;
@@ -1032,8 +944,6 @@ $raduis-bloc: 20px;
       //  padding-left: 30px;
     }
     label {
-      color: white;
-      font-size: 16px;
       text-align: left;
       padding-left: 30px;
     }
@@ -1046,15 +956,46 @@ html,
 body {
   background-color: #f0f1f7;
 }
-.nano_text {
-  font-size: 27px;
-  padding-bottom: 20px;
-}
-.regular_text {
-  font-size: 55px;
-  padding-bottom: 30px;
+
+@for $i from 1 through 90 {
+  .text_s#{$i} {
+    font-size: #{$i}px;
+    @media #{$small-screen} {
+      font-size: #{$i - 7}px;
+    }
+  }
 }
 
+.extra_bold_text {
+  font-family: $font-extra-bold;
+}
+.regular_text {
+  font-family: $font-regular;
+}
+.bold_text {
+  font-family: $font-bold;
+}
+.light_text {
+  font-family: $font-light;
+}
+.semi_bold_text {
+  font-family: $font-semi-bold;
+}
+.blue {
+  color: #0026bc;
+}
+.grey {
+  color: #8c96cf;
+}
+.white {
+  color: white;
+}
+.orange {
+  color: #ffa780;
+}
+.dark {
+  color: #1a237e;
+}
 ////*//////////////////////////////// */@extend
 
 .fdc {

@@ -3,98 +3,106 @@ import SwitchBloc from "./small.components/switch_bloc";
 
 const text_1 = (
   <div className="blocs">
-    <h3>
+    <h3 className="blue text_s38 bold_text">
       Know your metrics and increase <br></br> your team's performance.
     </h3>
     <img alt="separator_2" src={require("../assets/img/separator.svg")} />
 
-    <h5>
+    <h5 className="grey text_s18 regular_text">
       Huntease's dashboard provides day-to-day insights on SDR<br></br>
       performance metrics, and recaps daily acheivements.
     </h5>
     <br></br>
     <br></br>
-    <h5>
+    <h5 className="grey text_s18 regular_text">
       It stores data of each sales representative's performance and
       <br></br>calculates their conversion rate so they can compare it with
       <br></br>previous weeks and months.
     </h5>
     <div className="button-demo-two flex fdr jcc aic">
-      <h5 className="Text-inner">Show me how it works</h5>
+      <h5 className="Text-inner blue text_s18 regular_text">
+        Show me how it works
+      </h5>
       <img alt="arrow" src={require(`../assets/img/arrow.svg`)} />
     </div>
   </div>
 );
 const text_2 = (
   <div className="blocs">
-    <h3>
+    <h3 className="blue text_s38 bold_text">
       Close the deal<br></br>With team schedules.
     </h3>
     <img alt="separator_2" src={require("../assets/img/separator.svg")} />
-    <h5>
+    <h5 className="grey text_s18 regular_text">
       The average SDR usually has to use a CRM, phone<br></br>system, script
       documents and calendars from several<br></br>providers to close one
       deal...
     </h5>
     <br></br>
     <br></br>
-    <h5>
+    <h5 className="grey text_s18 regular_text">
       Huntease allows SDRs to complete their booking<br></br>process within our
       platform to save time and pave the <br></br>way for the next deal.
     </h5>
     <div className="button-demo-two flex fdr jcc aic">
-      <h5 className="Text-inner">Show me how it works</h5>
+      <h5 className="Text-inner blue text_s18 regular_text">
+        Show me how it works
+      </h5>
       <img alt="arrow" src={require(`../assets/img/arrow.svg`)} />
     </div>
   </div>
 );
 const text_3 = (
   <div className="blocs">
-    <h3>
+    <h3 className="blue text_s38 bold_text">
       Converting qualified prospects
       <br></br>into customers with smart guide.
     </h3>
     <br></br>
     <br></br>
-    <h5>
+    <h5 className="grey text_s18 regular_text">
       With Huntease's smart conversational guide, you can create a<br></br>step
       by step script that let's you focus on one thing at a time,<br></br>and
       let's you check it off your list.
     </h5>
     <br></br>
     <br></br>
-    <h5>
+    <h5 className="grey text_s18 regular_text">
       A checklist script method is proven to make SDRs more<br></br>productive
       and help them qualify leads more accurately.
     </h5>
     <div className="button-demo-two flex fdr jcc aic">
-      <h5 className="Text-inner">Show me how it works</h5>
+      <h5 className="Text-inner blue text_s18 regular_text">
+        Show me how it works
+      </h5>
       <img alt="arrow" src={require(`../assets/img/arrow.svg`)} />
     </div>
   </div>
 );
 const text_4 = (
   <div className="blocs">
-    <h3>
+    <h3 className="blue text_s38 bold_text">
       Access your future customers with
       <br></br>one click.
     </h3>
     <br></br>
     <br></br>
-    <h5>
+    <h5 className="grey text_s18 regular_text">
       We know how tedious and overwhelming CRMs can get, <br></br>therefore we
       made sure that Huntease can provide quick <br></br>access to your list of
       leads within the app with no hassle.
     </h5>
     <br></br>
     <br></br>
-    <h5>
+    <h5 className="grey text_s18 regular_text">
       We also made it possible to import leads from several CRMs <br></br>(like
       Hubspot, Salesforce...etc) into Huntease so that you can <br></br>sell
       with a few clicks.
     </h5>
     <div className="button-demo-two flex fdr jcc aic">
-      <h5 className="Text-inner">Show me how it works</h5>
+      <h5 className="Text-inner blue text_s18 regular_text">
+        Show me how it works
+      </h5>
       <img alt="arrow" src={require(`../assets/img/arrow.svg`)} />
     </div>
   </div>
