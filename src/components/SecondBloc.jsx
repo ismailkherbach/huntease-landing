@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import SwitchBloc from "./small.components/switch_bloc";
+import {
+  SwitchTransition,
+  CSSTransition,
+  Transition,
+} from "react-transition-group";
 
 const text_1 = (
   <div className="blocs">
@@ -109,11 +114,20 @@ const text_4 = (
 );
 const SecondBloc = (props) => {
   const [activatedBloc, setActivatedBloc] = useState(text_1);
-
+  const [mode, setMode] = React.useState("out-in");
+  const [state, setState] = React.useState(false);
+  const [bool, setBool] = useState(false);
   return (
     <div className="second-bloc flex fdc aic" id="features_bloc">
       <div className="switch-bloc flex fdr aic jcc">
-        <div onClick={() => setActivatedBloc(text_1)}>
+        <div
+          onClick={() => {
+            // setActivatedBloc(text_1);
+            setActivatedBloc(text_1);
+            setState((bool) => !bool);
+            console.log("activated");
+          }}
+        >
           {" "}
           <SwitchBloc
             text={"Dashboard"}
@@ -293,6 +307,7 @@ const SecondBloc = (props) => {
           alt="ilust_2"
           src={require("../assets/illustrations/ilust_2.svg")}
         />
+
         {activatedBloc}
       </div>
     </div>
