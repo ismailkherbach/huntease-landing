@@ -127,6 +127,18 @@ $raduis-bloc: 20px;
     margin-left: 20px;
   }
 }
+
+.toggle-navbar {
+  float: right;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  z-index: 200;
+  width: 76px;
+  height: 52px;
+  border-radius: 26px;
+  background-color: white;
+}
 .button-demo {
   width: 210px;
   height: 48px;
