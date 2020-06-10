@@ -127,6 +127,33 @@ $raduis-bloc: 20px;
     margin-left: 20px;
   }
 }
+.navbar-items-toggled {
+  float: right;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  z-index: 0;
+  background-color: #0026bc;
+  border-radius: $raduis-bloc;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.08);
+
+  padding: 15px;
+  ul {
+    margin: 10px;
+    padding: 20px;
+  }
+  ul li {
+    color: white;
+    font-size: 18px;
+    list-style-type: none;
+    text-align: center;
+    margin: 0px 25px 0px 25px;
+    // padding: 25px;
+  }
+  & .button-demo {
+    margin-left: 20px;
+  }
+}
 
 .toggle-navbar {
   float: right;

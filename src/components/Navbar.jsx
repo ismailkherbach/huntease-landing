@@ -4,7 +4,6 @@ import { UncontrolledCollapse } from "reactstrap";
 const Navbar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const size = useWindowSize();
-
   const toggle = () => setIsOpen(!isOpen);
 
   return (
@@ -38,7 +37,7 @@ const Navbar = (props) => {
         </div>
       )}
       {isOpen ? (
-        <div className="navbar-items flex fdc jcc aifs ">
+        <div className="navbar-items-toggled flex fdc jcc aifs ">
           <ul className="flex fdc aifs">
             <li>Features</li>
             <li>Pricing</li>
