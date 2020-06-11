@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/huntease-landing/precache-manifest.10e3de71734df14743a0d7d7730cdaf3.js"
+  "/huntease-landing/precache-manifest.0b4db279a2e1d824552c5e4c93e4f101.js"
 );
 
 self.addEventListener('message', (event) => {
