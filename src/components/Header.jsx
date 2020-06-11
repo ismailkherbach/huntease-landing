@@ -9,7 +9,11 @@ const Header = (props) => {
         <h2 className="white text_s55 bold_text">
           Increase conversion rate with the best{" "}
         </h2>
-        <img alt="separator" src={require("../assets/img/separator.png")} />
+        <img
+          className="sepa"
+          alt="separator"
+          src={require("../assets/img/separator.png")}
+        />
         <h2 className="white text_s55 bold_text">cold-calling experience.</h2>
         <h4 className="grey text_s23 semi_bold_text">
           Huntease is an all-in-one prospecting tool that offers a fluid,
