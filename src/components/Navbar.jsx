@@ -77,9 +77,41 @@ const Navbar = (props) => {
       {isOpen ? (
         <div className="navbar-items-toggled flex fdc jcc aifs ">
           <ul className="flex fdc aifs white semi_bold_text">
-            <li>Features</li>
-            <li>Pricing</li>
-            <li>Faq</li>
+            <li
+              onClick={() => {
+                let offsetTop = document.getElementById("features_bloc")
+                  .offsetTop;
+                window.scrollTo({
+                  top: offsetTop,
+                  behavior: "smooth",
+                });
+              }}
+            >
+              Features
+            </li>
+            <li
+              onClick={() => {
+                let offsetTop = document.getElementById("pricing_bloc")
+                  .offsetTop;
+                window.scrollTo({
+                  top: offsetTop,
+                  behavior: "smooth",
+                });
+              }}
+            >
+              Pricing
+            </li>
+            <li
+              onClick={() => {
+                let offsetTop = document.getElementById("faq_bloc").offsetTop;
+                window.scrollTo({
+                  top: offsetTop,
+                  behavior: "smooth",
+                });
+              }}
+            >
+              Faq
+            </li>
           </ul>
           <div
             className="button-demo flex aic jcc"
