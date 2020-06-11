@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c63a3a8a4a52a6e6210f212fc15e203b",
+    "revision": "a3a7c75ab85f74bfd5ff31869e605a5e",
     "url": "/huntease-landing/index.html"
   },
   {
-    "revision": "02252c030cbd0ae526ed",
-    "url": "/huntease-landing/static/css/main.f032012e.chunk.css"
+    "revision": "83720dbe52873bf08c43",
+    "url": "/huntease-landing/static/css/2.829c9cb5.chunk.css"
   },
   {
-    "revision": "9caa79f0a5fcb8ce6a9b",
-    "url": "/huntease-landing/static/js/2.bbc6ed47.chunk.js"
+    "revision": "55c6e731003747c8b8bf",
+    "url": "/huntease-landing/static/css/main.46d4d09a.chunk.css"
   },
   {
-    "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/huntease-landing/static/js/2.bbc6ed47.chunk.js.LICENSE.txt"
+    "revision": "83720dbe52873bf08c43",
+    "url": "/huntease-landing/static/js/2.18f877ee.chunk.js"
   },
   {
-    "revision": "02252c030cbd0ae526ed",
-    "url": "/huntease-landing/static/js/main.c5f22290.chunk.js"
+    "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
+    "url": "/huntease-landing/static/js/2.18f877ee.chunk.js.LICENSE.txt"
+  },
+  {
+    "revision": "55c6e731003747c8b8bf",
+    "url": "/huntease-landing/static/js/main.d4fdb69b.chunk.js"
   },
   {
     "revision": "d080fe51d7783fc3a3e7",
