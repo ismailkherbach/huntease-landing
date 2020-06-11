@@ -135,6 +135,9 @@ $raduis-bloc: 20px;
   img {
     float: left;
     width: 177px;
+    @include phone {
+      width: 40px;
+    }
   }
 }
 .navbar-items-toggled {
