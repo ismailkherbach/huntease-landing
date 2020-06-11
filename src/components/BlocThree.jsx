@@ -10,18 +10,20 @@ const BlocThree = (props) => {
           Automated emotion recognition <br></br>from natural conversations.
         </h2>
         <img alt="separator" src={require("../assets/img/separator.svg")} />
+        <br></br>{" "}
         <h4 className="text_s18 semi_bold_text grey">
           Identify ambiguous speech patterns directly from the prospect's voice
-          and<br></br> immediately recognize their emotions and intent. Our
-          deep-learning<br></br> algorithms provide predictive analysis on
-          when's the ideal time to sell.
+          and<br></br> immediately recognize their emotions and{" "}
+          <span className="white">intent.</span> Our deep-learning<br></br>{" "}
+          algorithms provide predictive analysis on when's the ideal time to
+          sell.
         </h4>
+        <br></br>
         <div
           className="button-demo flex fdr jcc aic"
           onClick={props.tooglePopup}
         >
-          Get a free demo
-          <img alt="arrow" src={require("../assets/img/arrow.png")} />
+          I want to learn more
         </div>
       </div>
     </div>

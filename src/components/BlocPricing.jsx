@@ -12,7 +12,7 @@ const BlocPricing = (props) => {
         giving you, try all the features for Free
       </h4>
       <div className="toggle-container flex fdr aic jcc">
-        <h3 className={`text_s27 light_text ${checked ? "grey" : "blue"}`}>
+        <h3 className={`text_s27 regular_text ${checked ? "grey" : "blue"}`}>
           Monthly
         </h3>
         <Switch
@@ -26,7 +26,7 @@ const BlocPricing = (props) => {
           onChange={() => SetChecked(!checked)}
           checked={checked}
         />
-        <h3 className={`text_s27 light_text ${checked ? "blue" : "grey"}`}>
+        <h3 className={`text_s27 regular_text ${checked ? "blue" : "grey"}`}>
           Yearly
         </h3>
         <img

@@ -15,11 +15,13 @@ const Header = (props) => {
           src={require("../assets/img/separator.png")}
         />
         <h2 className="white text_s55 bold_text">cold-calling experience.</h2>
+        <br></br>
         <h4 className="grey text_s23 semi_bold_text">
           Huntease is an all-in-one prospecting tool that offers a fluid,
           intuitive experience <br></br>designed to make cold-calling easy, fun
           and more productive.
         </h4>
+        <br></br>
         <div
           className="button-demo flex fdr jcc aic"
           onClick={props.tooglePopup}

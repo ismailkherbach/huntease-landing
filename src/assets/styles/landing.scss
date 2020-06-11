@@ -19,6 +19,7 @@ $raduis-bloc: 20px;
   text-align: center;
   position: relative;
   z-index: 0;
+  background-color: black;
 }
 .App-header {
   background: url("../img/header_back.png");
@@ -28,7 +29,7 @@ $raduis-bloc: 20px;
   background-position: right;
   width: 96%;
   // height: 70vh;
-  padding: 150px 0 100px 0;
+  padding: 160px 0 100px 0;
   margin: 30px 30px 0 30px;
   position: relative;
   @include phone {
@@ -40,7 +41,7 @@ $raduis-bloc: 20px;
   }
   @include Tablet {
     width: 280px;
-    height: 406px;
+    height: 506px;
     background-color: #0026bc;
     border-radius: $raduis-bloc;
     width: 98%;
@@ -88,29 +89,21 @@ $raduis-bloc: 20px;
       width: 621px;
     }
     @include desktop-xs {
+      bottom: -250px;
+
       width: 621px;
     }
     @include Tablet {
-      width: 621px;
+      width: 521px;
     }
     @include phone {
-      width: 351px;
-    }
-  }
-}
-.navbar {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  margin: 0px 8px 0px 8px;
+      bottom: -230px;
 
-  .logo {
-    float: left;
-    img {
-      float: left;
+      width: 401px;
     }
   }
 }
+
 .navbar-items {
   float: right;
   position: absolute;
@@ -131,6 +124,16 @@ $raduis-bloc: 20px;
   }
   & .button-demo {
     margin-left: 20px;
+  }
+}
+.navbar-logo {
+  float: right;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  z-index: 200;
+  img {
+    float: left;
   }
 }
 .navbar-items-toggled {
@@ -213,10 +216,11 @@ $raduis-bloc: 20px;
       padding-bottom: 140px;
       padding-left: 5%;
       padding-right: 5%;
+
       @include desktop-xl {
-        padding-left: 3%;
-        padding-right: 3%;
-        width: 70%;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 85%;
       }
       width: 80%;
       h2 {
@@ -233,49 +237,51 @@ $raduis-bloc: 20px;
         padding: 0;
       }
     }
-    .container {
+    .features {
+      flex-wrap: wrap;
       width: 100%;
-      .features {
-        flex-wrap: wrap;
-        // width: 90%;
-        @include desktop-lg {
-          width: 100%;
-        }
+      margin: 4% 0 4% 0;
+      @include desktop-lg {
+        width: 100%;
+      }
+      @include desktop-xl {
+        width: 100%;
+      }
+      @include desktop-sm {
+        width: 100%;
+      }
+      @include desktop-xs {
+        width: 60%;
+      }
+      @include desktop-md {
+        width: 100%;
+      }
+      margin-bottom: 140px;
+      .feature {
+        // margin-bottom: 5%;
+        // margin-left: 40px;
+        //  margin: 0 5px 0 5px;
+        padding: 10px 15px 0 15px;
+        width: 270px;
         @include desktop-xl {
-          width: 100%;
+          //   padding: 10px 60px 0 60px;
+          width: 300px;
         }
-        @include desktop-sm {
-          width: 100%;
-        }
-        @include desktop-xs {
-          width: 60%;
-        }
-        @include desktop-md {
-          width: 100%;
-        }
-        margin-bottom: 140px;
-        .feature {
-          // margin-bottom: 5%;
-          // margin-left: 40px;
-          padding: 10px 25px 0 25px;
-          width: 250px;
+        p {
+          text-align: center;
 
-          p {
-            text-align: center;
-
-            margin: 0;
-            padding: 0;
-          }
-          h5 {
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            padding: 30px 0 30px 0;
-          }
-          img {
-            width: 90px;
-            height: 90px;
-          }
+          margin: 0;
+          padding: 0;
+        }
+        h5 {
+          text-align: center;
+          margin: 0;
+          padding: 0;
+          padding: 30px 0 30px 0;
+        }
+        img {
+          width: 90px;
+          height: 90px;
         }
       }
     }
@@ -414,7 +420,8 @@ $raduis-bloc: 20px;
       cursor: pointer;
       .Text {
         text-align: center;
-        padding: 0 25px 0 27px;
+        padding: 0 25px 0 25px;
+        margin: 0;
       }
       .circle-inner {
         width: 40px;
@@ -517,6 +524,7 @@ $raduis-bloc: 20px;
     }
     h4 {
       text-align: left;
+      line-height: 1.7;
     }
   }
 
@@ -591,12 +599,12 @@ $raduis-bloc: 20px;
   padding-top: 5%;
   padding-bottom: 5%;
   @include phone {
-    padding-bottom: 450px;
-    height: 600px;
+    padding-bottom: 350px;
+    height: 30%;
   }
   @include Tablet {
-    padding-bottom: 450px;
-    height: 600px;
+    padding-bottom: 350px;
+    height: 30%;
   }
   @include desktop-xs {
     padding-bottom: 20%;
@@ -622,31 +630,45 @@ $raduis-bloc: 20px;
     padding: 0;
     padding-bottom: 40px;
   }
-  .container {
-    width: 100%;
-  }
-
-  .question-container {
+  .faq-container {
     flex-wrap: wrap;
-    // width: 80%;
-    //padding: 0 4% 0 4%;
-    @include phone {
-      flex-wrap: wrap;
-    }
-    //padding-top: 5%;
-    .question-bloc {
-      // background-color: white;
-      height: 80px;
-      width: 530px;
-      border-radius: 161px;
-      border: 2px solid #8c96cf;
-      z-index: 200;
-      margin: 0 20px 40px 20px;
-      padding: 0px 5px 0px 5px;
-      cursor: pointer;
+    width: 100%;
 
-      h4 {
-        text-align: center;
+    .questions {
+      flex-wrap: wrap;
+      width: 100%;
+      //padding: 0 4% 0 4%;
+      @include phone {
+        flex-wrap: wrap;
+      }
+      //padding-top: 5%;
+      .question-bloc {
+        // background-color: white;
+        .faq-toggle {
+          height: 80px;
+          width: 540px;
+          @include phone {
+            width: 90%;
+          }
+          border-radius: 161px;
+          border: 2px solid #8c96cf;
+          z-index: 200;
+          margin: 0 20px 40px 20px;
+          padding: 0px 5px 0px 5px;
+          cursor: pointer;
+
+          h4 {
+            text-align: center;
+          }
+        }
+        .faq-toggled {
+          height: 80px;
+          width: 540px;
+          @include phone {
+            width: 100%;
+          }
+          // border: 1px solid red;
+        }
       }
     }
   }
@@ -917,6 +939,9 @@ $raduis-bloc: 20px;
   @include phone {
     padding-top: 130%;
   }
+  @include Tablet {
+    padding-top: 10%;
+  }
   .items {
     padding: 15% 0 15% 0;
 
@@ -992,6 +1017,7 @@ $raduis-bloc: 20px;
   opacity: 1;
   z-index: 1000;
   position: relative;
+  padding: 60px 0 20px 0;
   @include desktop-xl {
     width: 628px;
     //  height: 834px;
@@ -1028,7 +1054,7 @@ $raduis-bloc: 20px;
     cursor: pointer;
   }
   .popup-inner-container {
-    padding: 0px 20px 0 20px;
+    padding: 30px 20px 0 20px;
     @include desktop-xl {
       padding: 0px 70px 0 70px;
     }
@@ -1068,10 +1094,11 @@ $raduis-bloc: 20px;
       padding-left: 30px;
     }
     & .button-demo {
-      margin: 20px 0 10px 0;
+      margin: 20px 0 20px 0;
     }
   }
 }
+
 html,
 body {
   background-color: #f0f1f7;

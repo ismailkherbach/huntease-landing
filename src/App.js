@@ -17,7 +17,12 @@ function App() {
     setPopup(!popup);
   };
   return (
-    <div className="App flex fdc aic ">
+    <div
+      className="App flex fdc aic "
+      style={{
+        backgroundColor: "#F0F1F7",
+      }}
+    >
       <header className="App-header flex aic jcc">
         <Header tooglePopup={tooglePopup} />
       </header>

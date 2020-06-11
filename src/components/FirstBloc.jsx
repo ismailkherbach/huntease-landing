@@ -5,6 +5,7 @@ const FirstBloc = () => {
   return (
     <div className="first-bloc-container flex fdc jcc aic">
       {" "}
+      <br></br>
       <h5 className="flex aic jcc bold_text orange text_s24">
         "On a traditional CRM, it takes an average of 6 clicks to make a call."
       </h5>
@@ -17,6 +18,7 @@ const FirstBloc = () => {
           <h2 className="blue bold_text text_s55">
             for your cold-calling campaigns.
           </h2>
+          <br></br>
           <h4 className="grey text_24 semi_bold_text">
             Huntease is a sales-calling software that employs AI to help sales
             <br></br>
@@ -29,7 +31,7 @@ const FirstBloc = () => {
             calendar to book meetings.
           </h4>
         </div>
-        <div className="container flex aic jcc">
+        <div className=" flex aic jcc">
           <div className="flex features fdr aic jcc">
             {" "}
             <FirstBlocFeature

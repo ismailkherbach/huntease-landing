@@ -26,7 +26,7 @@ const text_1 = (
       <br></br>previous weeks and months.
     </h5>
     <div className="button-demo-two flex fdr jcc aic">
-      <h5 className="Text-inner blue text_s18 regular_text">
+      <h5 className="Text-inner blue text_s18 semi_bold_text">
         Show me how it works
       </h5>
       <img alt="arrow" src={require(`../assets/img/arrow.svg`)} />
@@ -51,7 +51,7 @@ const text_2 = (
       platform to save time and pave the <br></br>way for the next deal.
     </h5>
     <div className="button-demo-two flex fdr jcc aic">
-      <h5 className="Text-inner blue text_s18 regular_text">
+      <h5 className="Text-inner blue text_s18 semi_bold_text">
         Show me how it works
       </h5>
       <img alt="arrow" src={require(`../assets/img/arrow.svg`)} />
@@ -78,7 +78,7 @@ const text_3 = (
       and help them qualify leads more accurately.
     </h5>
     <div className="button-demo-two flex fdr jcc aic">
-      <h5 className="Text-inner blue text_s18 regular_text">
+      <h5 className="Text-inner blue text_s18 semi_bold_text">
         Show me how it works
       </h5>
       <img alt="arrow" src={require(`../assets/img/arrow.svg`)} />
@@ -106,7 +106,7 @@ const text_4 = (
       with a few clicks.
     </h5>
     <div className="button-demo-two flex fdr jcc aic">
-      <h5 className="Text-inner blue text_s18 regular_text">
+      <h5 className="Text-inner blue text_s18 semi_bold_text">
         Show me how it works
       </h5>
       <img alt="arrow" src={require(`../assets/img/arrow.svg`)} />

@@ -7,9 +7,8 @@ const Navbar = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="flex fdr aic jcc">
-      <div className="navbar logo flex jcc" onClick={toggle}>
-        {" "}
+    <div className="flex fdr">
+      <div className="navbar-logo">
         <img
           alt="logo"
           src={require(`../assets/img/${
