@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import SwitchBloc from "./small.components/switch_bloc";
-import {
+/*import {
   SwitchTransition,
   CSSTransition,
   Transition,
-} from "react-transition-group";
+} from "react-transition-group";*/
 
 const text_1 = (
   <div className="blocs">
@@ -114,9 +114,9 @@ const text_4 = (
 );
 const SecondBloc = (props) => {
   const [activatedBloc, setActivatedBloc] = useState(text_1);
-  const [mode, setMode] = React.useState("out-in");
-  const [state, setState] = React.useState(false);
-  const [bool, setBool] = useState(false);
+  //const [mode, setMode] = React.useState("out-in");
+  //const [state, setState] = React.useState(false);
+  // const [bool, setBool] = useState(false);
   return (
     <div className="second-bloc flex fdc aic" id="features_bloc">
       <div className="switch-bloc flex fdr aic jcc">
@@ -124,7 +124,7 @@ const SecondBloc = (props) => {
           onClick={() => {
             // setActivatedBloc(text_1);
             setActivatedBloc(text_1);
-            setState((bool) => !bool);
+            //  setState((bool) => !bool);
             console.log("activated");
           }}
         >
@@ -146,7 +146,7 @@ const SecondBloc = (props) => {
                     data-name="Rectangle 986"
                     width="42"
                     height="42"
-                    fill={activatedBloc == "text_1" ? "#0026bc" : "#8c96cf"}
+                    fill={activatedBloc === "text_1" ? "#0026bc" : "#8c96cf"}
                     opacity="0"
                   />
                   <path
@@ -154,14 +154,14 @@ const SecondBloc = (props) => {
                     data-name="Tracé 234"
                     d="M15.105,16.4H26.639a1.435,1.435,0,0,0,1.435-1.435A12.969,12.969,0,0,0,15.105,2,1.435,1.435,0,0,0,13.67,3.435V14.969A1.435,1.435,0,0,0,15.105,16.4ZM16.54,4.991a10.081,10.081,0,0,1,8.542,8.542H16.54Z"
                     transform="translate(9.968 1.458)"
-                    fill={activatedBloc == text_1 ? "#0026bc" : "#8c96cf"}
+                    fill={activatedBloc === text_1 ? "#0026bc" : "#8c96cf"}
                   />
                   <path
                     id="Tracé_235"
                     data-name="Tracé 235"
                     d="M34.952,19.3H20.859a1.574,1.574,0,0,1-1.574-1.574V3.595A1.591,1.591,0,0,0,17.522,2,17.292,17.292,0,1,0,36.543,21.025,1.591,1.591,0,0,0,34.952,19.3Z"
                     transform="translate(1.499 1.454)"
-                    fill={activatedBloc == text_1 ? "#0026bc" : "#8c96cf"}
+                    fill={activatedBloc === text_1 ? "#0026bc" : "#8c96cf"}
                   />
                 </g>
               </svg>
@@ -185,7 +185,7 @@ const SecondBloc = (props) => {
                   width="44"
                   height="44"
                   transform="translate(44 44) rotate(180)"
-                  fill={activatedBloc == text_2 ? "#0026bc" : "#8c96cf"}
+                  fill={activatedBloc === text_2 ? "#0026bc" : "#8c96cf"}
                   opacity="0"
                 />
                 <path
@@ -193,14 +193,14 @@ const SecondBloc = (props) => {
                   data-name="Tracé 232"
                   d="M27.667,4.564a2.273,2.273,0,0,0-1.98-.422L13,7.406V33.568l13.86-3.557a2.292,2.292,0,0,0,1.723-2.237V6.361a2.292,2.292,0,0,0-.917-1.8Z"
                   transform="translate(10.833 3.392)"
-                  fill={activatedBloc == text_2 ? "#0026bc" : "#8c96cf"}
+                  fill={activatedBloc === text_2 ? "#0026bc" : "#8c96cf"}
                 />
                 <path
                   id="Tracé_233"
                   data-name="Tracé 233"
                   d="M18.067,7.4,5.343,4.137A2.328,2.328,0,0,0,3.4,4.559a2.292,2.292,0,0,0-.88,1.833V27.769a2.292,2.292,0,0,0,1.723,2.218l13.823,3.575Z"
                   transform="translate(2.1 3.398)"
-                  fill={activatedBloc == text_2 ? "#0026bc" : "#8c96cf"}
+                  fill={activatedBloc === text_2 ? "#0026bc" : "#8c96cf"}
                 />
               </svg>
             }
@@ -224,7 +224,7 @@ const SecondBloc = (props) => {
                     data-name="Rectangle 987"
                     width="43"
                     height="43"
-                    fill={activatedBloc == text_3 ? "#0026bc" : "#8c96cf"}
+                    fill={activatedBloc === text_3 ? "#0026bc" : "#8c96cf"}
                     opacity="0"
                   />
                   <path
@@ -232,21 +232,21 @@ const SecondBloc = (props) => {
                     data-name="Tracé 236"
                     d="M12.209,17.418A7.209,7.209,0,1,0,5,10.209,7.209,7.209,0,0,0,12.209,17.418Z"
                     transform="translate(4.011 2.407)"
-                    fill={activatedBloc == text_3 ? "#0026bc" : "#8c96cf"}
+                    fill={activatedBloc === text_3 ? "#0026bc" : "#8c96cf"}
                   />
                   <path
                     id="Tracé_237"
                     data-name="Tracé 237"
                     d="M19.407,17.814A5.407,5.407,0,1,0,14,12.407,5.407,5.407,0,0,0,19.407,17.814Z"
                     transform="translate(11.232 5.616)"
-                    fill={activatedBloc == text_3 ? "#0026bc" : "#8c96cf"}
+                    fill={activatedBloc === text_3 ? "#0026bc" : "#8c96cf"}
                   />
                   <path
                     id="Tracé_238"
                     data-name="Tracé 238"
                     d="M36.243,25.608a1.8,1.8,0,0,0,1.8-1.8,9.011,9.011,0,0,0-14.526-7.119A12.616,12.616,0,0,0,2,25.608a1.8,1.8,0,0,0,1.8,1.8H25.429a1.8,1.8,0,0,0,1.8-1.8"
                     transform="translate(1.605 10.437)"
-                    fill={activatedBloc == text_3 ? "#0026bc" : "#8c96cf"}
+                    fill={activatedBloc === text_3 ? "#0026bc" : "#8c96cf"}
                   />
                 </g>
               </svg>
@@ -272,7 +272,7 @@ const SecondBloc = (props) => {
                     data-name="Rectangle 987"
                     width="43"
                     height="43"
-                    fill={activatedBloc == text_4 ? "#0026bc" : "#8c96cf"}
+                    fill={activatedBloc === text_4 ? "#0026bc" : "#8c96cf"}
                     opacity="0"
                   />
                   <path
@@ -280,21 +280,21 @@ const SecondBloc = (props) => {
                     data-name="Tracé 236"
                     d="M12.209,17.418A7.209,7.209,0,1,0,5,10.209,7.209,7.209,0,0,0,12.209,17.418Z"
                     transform="translate(4.011 2.407)"
-                    fill={activatedBloc == text_4 ? "#0026bc" : "#8c96cf"}
+                    fill={activatedBloc === text_4 ? "#0026bc" : "#8c96cf"}
                   />
                   <path
                     id="Tracé_237"
                     data-name="Tracé 237"
                     d="M19.407,17.814A5.407,5.407,0,1,0,14,12.407,5.407,5.407,0,0,0,19.407,17.814Z"
                     transform="translate(11.232 5.616)"
-                    fill={activatedBloc == text_4 ? "#0026bc" : "#8c96cf"}
+                    fill={activatedBloc === text_4 ? "#0026bc" : "#8c96cf"}
                   />
                   <path
                     id="Tracé_238"
                     data-name="Tracé 238"
                     d="M36.243,25.608a1.8,1.8,0,0,0,1.8-1.8,9.011,9.011,0,0,0-14.526-7.119A12.616,12.616,0,0,0,2,25.608a1.8,1.8,0,0,0,1.8,1.8H25.429a1.8,1.8,0,0,0,1.8-1.8"
                     transform="translate(1.605 10.437)"
-                    fill={activatedBloc == text_4 ? "#0026bc" : "#8c96cf"}
+                    fill={activatedBloc === text_4 ? "#0026bc" : "#8c96cf"}
                   />
                 </g>
               </svg>

@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 const Popup = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
+  //  const [isOpen, setIsOpen] = useState(false);
   const [email, SetEmail] = useState("");
   const [phone, SetPhone] = useState("");
   const [name, SetName] = useState("");
   const [success, SetSuccess] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
+  //const toggle = () => setIsOpen(!isOpen);
 
   const send_mail = async () => {
     const response = await axios.post(

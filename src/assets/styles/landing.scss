@@ -714,6 +714,7 @@ $raduis-bloc: 20px;
       border-radius: 10px;
       bottom: 300px;
       right: 200px;
+
       box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.08);
       z-index: 100;
       padding: 0 0 0 15px;
@@ -728,7 +729,6 @@ $raduis-bloc: 20px;
       h5 {
         text-align: left;
         line-height: normal;
-
         margin: 0;
         padding: 0;
       }
@@ -740,19 +740,30 @@ $raduis-bloc: 20px;
       &.partner {
         height: 269px !important;
       }
-      width: 390px;
-      //  height: 693px;
-      background-color: white;
-      border-radius: $raduis-bloc;
-      //padding: 14px 14px 14px 14px;
-      padding-bottom: 16px;
+      @include desktop-md {
+        width: 340px;
+        margin: 0 4px 0 4px;
+      }
+      @include desktop-sm {
+        width: 340px;
+        margin: 0 4px 0 4px;
+      }
+      @include desktop-xs {
+        width: 340px;
+        margin: 0 4px 0 4px;
+      }
       @include phone {
         width: 340px;
-
-        //  margin: 0 14px 0 14px;
+        margin: 15px 8px 0 8px;
       }
+
+      padding-bottom: 30px;
       margin: 0 8px 0 8px;
       margin-bottom: 5%;
+      width: 390px;
+      background-color: white;
+      border-radius: $raduis-bloc;
+
       position: relative;
       .red_notice {
         position: absolute;
@@ -784,14 +795,26 @@ $raduis-bloc: 20px;
 
       .plan-features {
         padding: 14px 14px 14px 14px;
+        @include desktop-md {
+          padding: 6px 6px 12px 6px;
+        }
+        @include desktop-sm {
+          padding: 6px 6px 12px 6px;
+        }
+        @include desktop-xs {
+          padding: 6px 6px 12px 6px;
+        }
+        @include phone {
+          padding: 0px 4px 12px 4px;
+        }
         .plan-item {
           p {
             text-align: left;
-            padding: 5px;
+            //padding: 5px;
             line-height: 2.7;
             margin: 0;
             padding: 0;
-            padding-left: 14px;
+            padding-left: 5px;
             padding-right: 5px;
           }
         }
@@ -1030,7 +1053,7 @@ body {
   .text_s#{$i} {
     font-size: #{$i}px;
     @media #{$small-screen} {
-      font-size: #{$i - 7}px;
+      font-size: #{$i - 2}px;
     }
   }
 }

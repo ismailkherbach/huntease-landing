@@ -1,5 +1,5 @@
 import React from "react";
-import { UncontrolledCollapse } from "reactstrap";
+//import { UncontrolledCollapse } from "reactstrap";
 const FAQ = (props) => {
   return (
     <div className="FAQ flex fdc aic jcfs" id="faq_bloc">

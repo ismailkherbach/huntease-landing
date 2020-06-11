@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Collapse, NavbarToggler } from "reactstrap";
-import { UncontrolledCollapse } from "reactstrap";
+//import { Collapse, NavbarToggler } from "reactstrap";
+//import { UncontrolledCollapse } from "reactstrap";
 const Navbar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const size = useWindowSize();
