@@ -18,12 +18,6 @@ const FAQ = (props) => {
       <div className="faq-container regular_text grey">
         <div className="questions flex fdr jcc aic ">
           <div className="question-bloc flex fdc aic jcc ">
-            <UncontrolledCollapse toggler="toggler-1">
-              <div className="faq-toggled">
-                No. Huntease's 14-days free trial offers 25min for free and
-                doesn't require credit card information.
-              </div>
-            </UncontrolledCollapse>
             <div className="faq-toggle flex aic jcc" id="toggler-1">
               {" "}
               <h4 className=" text_s17">
@@ -31,19 +25,25 @@ const FAQ = (props) => {
                 version?
               </h4>
             </div>
+            <UncontrolledCollapse toggler="toggler-1">
+              <div className="faq-toggled">
+                No. Huntease's 14-days free trial offers 25min for free and
+                doesn't require credit card information.
+              </div>
+            </UncontrolledCollapse>
           </div>
           <div className="question-bloc fdc flex aic jcc">
+            <div className="faq-toggle flex aic jcc" id="toggler-2">
+              <h4 className=" text_s17">
+                2. Is it possible to integrate Huntease with my favorite CRM?
+              </h4>
+            </div>
             <UncontrolledCollapse toggler="toggler-2">
               <div className="faq-toggled">
                 Absolutely, currently we offer integrations with Hubspot and
                 PipeDrive only but many more integrations are coming soon.
               </div>
             </UncontrolledCollapse>
-            <div className="faq-toggle flex aic jcc" id="toggler-2">
-              <h4 className=" text_s17">
-                2. Is it possible to integrate Huntease with my favorite CRM?
-              </h4>
-            </div>
           </div>{" "}
         </div>
 
@@ -52,6 +52,11 @@ const FAQ = (props) => {
   </UncontrolledCollapse>*/}
         <div className="questions flex aic jcc">
           <div className="question-bloc fdc flex aic jcc">
+            <div className="faq-toggle flex aic jcc" id="toggler-3">
+              <h4 className=" text_s17">
+                3. Does Huntease offer integrated VoIP?
+              </h4>
+            </div>
             <UncontrolledCollapse toggler="toggler-3">
               <div className="faq-toggled">
                 Yes, Huntease is an outbound calling software with integrated
@@ -59,13 +64,13 @@ const FAQ = (props) => {
                 calls directly from our application.
               </div>
             </UncontrolledCollapse>
-            <div className="faq-toggle flex aic jcc" id="toggler-3">
-              <h4 className=" text_s17">
-                3. Does Huntease offer integrated VoIP?
-              </h4>
-            </div>
           </div>
           <div className="question-bloc fdc flex aic jcc">
+            <div className="faq-toggle flex aic jcc" id="toggler-4">
+              <h4 className=" text_s17">
+                4. What sets Huntease apart from other Cloud calling services?
+              </h4>
+            </div>
             <UncontrolledCollapse toggler="toggler-4">
               <div className="faq-toggled">
                 Unlike other services, Huntease is designed to increase the
@@ -73,15 +78,15 @@ const FAQ = (props) => {
                 performance and productivity.
               </div>
             </UncontrolledCollapse>
-            <div className="faq-toggle flex aic jcc" id="toggler-4">
-              <h4 className=" text_s17">
-                4. What sets Huntease apart from other Cloud calling services?
-              </h4>
-            </div>
           </div>
         </div>
         <div className="questions flex aic jcc">
           <div className="question-bloc fdc flex aic jcc">
+            <div className="faq-toggle flex aic jcc" id="toggler-5">
+              <h4 className=" text_s17">
+                5. My prospects speak different languages, is this a problem?
+              </h4>
+            </div>
             <UncontrolledCollapse toggler="toggler-5">
               <div className="faq-toggled">
                 Not at all. Our software has been validated with existing
@@ -89,11 +94,6 @@ const FAQ = (props) => {
                 language.
               </div>
             </UncontrolledCollapse>
-            <div className="faq-toggle flex aic jcc" id="toggler-5">
-              <h4 className=" text_s17">
-                5. My prospects speak different languages, is this a problem?
-              </h4>
-            </div>
           </div>
         </div>
       </div>

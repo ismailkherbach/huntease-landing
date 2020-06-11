@@ -134,6 +134,7 @@ $raduis-bloc: 20px;
   z-index: 200;
   img {
     float: left;
+    width: 177px;
   }
 }
 .navbar-items-toggled {
@@ -664,6 +665,7 @@ $raduis-bloc: 20px;
         .faq-toggled {
           height: 80px;
           width: 540px;
+          //    border: 1px solid #8c96cf;
           @include phone {
             width: 100%;
           }
@@ -1017,13 +1019,23 @@ $raduis-bloc: 20px;
   opacity: 1;
   z-index: 1000;
   position: relative;
-  padding: 60px 0 20px 0;
+  padding: 6% 0 3% 0;
   @include desktop-xl {
     width: 628px;
-    //  height: 834px;
+    height: 734px;
   }
   @include desktop-md {
-    // height: 670px;
+    height: 670px;
+    width: 470px;
+  }
+  @include desktop-lg {
+    height: 670px;
+    width: 470px;
+  }
+  @include phone {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
   }
   .top_left {
     background-image: url("../left_back.svg");
@@ -1054,17 +1066,19 @@ $raduis-bloc: 20px;
     cursor: pointer;
   }
   .popup-inner-container {
-    padding: 30px 20px 0 20px;
+    padding: 5% 20px 0 20px;
     @include desktop-xl {
-      padding: 0px 70px 0 70px;
+      padding: 30px 70px 0 70px;
     }
     h3 {
       list-style-type: none;
       text-align: center;
+      font-size: 24px;
     }
     p {
       text-align: center;
       padding-bottom: 20px;
+      font-size: 14px;
     }
     input {
       width: 400px;
@@ -1073,11 +1087,11 @@ $raduis-bloc: 20px;
       color: #354eb1;
       border-radius: 20px;
       padding: 10px;
-      border: 0;
+      border: 10px;
       outline: 0;
       padding: 0;
       padding-left: 30px;
-      margin: 8px 0 20px 0;
+      margin: 0px 0 15px 0;
       color: white;
       font-size: 16px;
       z-index: 5000;
@@ -1094,7 +1108,7 @@ $raduis-bloc: 20px;
       padding-left: 30px;
     }
     & .button-demo {
-      margin: 20px 0 20px 0;
+      margin: 20px 0 50px 0;
     }
   }
 }
