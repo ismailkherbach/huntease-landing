@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SwitchBloc from "./small.components/switch_bloc";
 import SwitchBlocMobile from "./small.components/switch_bloc_mobile";
 /*import {
@@ -117,10 +117,10 @@ const SecondBloc = (props) => {
   const [activatedBloc, setActivatedBloc] = useState(text_1);
   //const [mode, setMode] = React.useState("out-in");
   //const [state, setState] = React.useState(false);
-  const [bool, setBool] = useState(false);
+  const size = useWindowSize();
   return (
     <div className="second-bloc flex fdc aic" id="features_bloc">
-      {bool && (
+      {size.width >= 600 && (
         <div className="switch-bloc flex fdr aic jcc">
           <div
             onClick={() => {
@@ -300,7 +300,7 @@ const SecondBloc = (props) => {
           </div>
         </div>
       )}
-      {!bool && (
+      {size.width < 600 && (
         <div className="switch-bloc-mobile flex fdr aic jcc">
           <div
             onClick={() => {
@@ -493,3 +493,31 @@ const SecondBloc = (props) => {
 };
 
 export default SecondBloc;
+
+function useWindowSize() {
+  const isClient = typeof window === "object";
+
+  function getSize() {
+    return {
+      width: isClient ? window.innerWidth : undefined,
+      height: isClient ? window.innerHeight : undefined,
+    };
+  }
+
+  const [windowSize, setWindowSize] = useState(getSize);
+
+  useEffect(() => {
+    if (!isClient) {
+      return false;
+    }
+
+    function handleResize() {
+      setWindowSize(getSize());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); // Empty array ensures that effect is only run on mount and unmount
+
+  return windowSize;
+}
