@@ -20,7 +20,7 @@ const FAQ = (props) => {
       <div className="faq-container grey">
         <div className="questions flex fdr jcc aic ">
           <div className="question-bloc flex fdc aic jcc ">
-            <div className="faq-toggle flex fdc aic jcc" id="toggler-1">
+            <div className="faq-toggle flex fdc aic jcfs" id="toggler-1">
               {" "}
               <h4 className=" text_s17 extra_bold_text text_s17">
                 1. Do I need to give credit card information to use the free
@@ -35,7 +35,7 @@ const FAQ = (props) => {
             </div>
           </div>
           <div className="question-bloc fdc flex aic jcc">
-            <div className="faq-toggle flex fdc aic jcc" id="toggler-2">
+            <div className="faq-toggle flex fdc aic jcfs" id="toggler-2">
               <h4 className=" text_s17 extra_bold_text text_s17">
                 2. Is it possible to integrate Huntease with my favorite CRM?
               </h4>
@@ -54,8 +54,8 @@ const FAQ = (props) => {
   </UncontrolledCollapse>*/}
         <div className="questions flex aic jcc">
           <div className="question-bloc fdc flex aic jcc">
-            <div className="faq-toggle fdc flex aic jcc" id="toggler-3">
-              <h4 className=" text_s17 extra_bold_text text_s17">
+            <div className="faq-toggle fdc flex aic jcl" id="toggler-3">
+              <h4 className="text_s17 extra_bold_text text_s17">
                 3. Does Huntease offer integrated VoIP?
               </h4>
               <UncontrolledCollapse toggler="toggler-3">
@@ -68,7 +68,7 @@ const FAQ = (props) => {
             </div>
           </div>
           <div className="question-bloc fdc flex aic jcc">
-            <div className="faq-toggle flex fdc aic jcc" id="toggler-4">
+            <div className="faq-toggle flex fdc aic jcfs" id="toggler-4">
               <h4 className=" text_s17 extra_bold_text text_s17">
                 4. What sets Huntease apart from other Cloud calling services?
               </h4>
@@ -84,7 +84,7 @@ const FAQ = (props) => {
         </div>
         <div className="questions flex aic jcc">
           <div className="question-bloc fdc flex aic jcc">
-            <div className="faq-toggle flex fdc aic jcc" id="toggler-5">
+            <div className="faq-toggle flex fdc aic jcfs" id="toggler-5">
               <h4 className=" text_s17 extra_bold_text text_s17">
                 5. My prospects speak different languages, is this a problem?
               </h4>

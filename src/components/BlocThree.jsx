@@ -6,7 +6,7 @@ const BlocThree = (props) => {
       <img alt="ilust_2" src={require("../assets/illustrations/ilust_3.svg")} />
 
       <div className="inner-Text flex fdc jcfs">
-        <h2 className="text_s38 white extra_bold_text">
+        <h2 className="white extra_bold_text">
           Automated emotion recognition <br></br>from natural conversations.
         </h2>
         <img
@@ -15,7 +15,7 @@ const BlocThree = (props) => {
           src={require("../assets/img/separator.svg")}
         />
         <br></br>{" "}
-        <h4 className="text_s18 semi_bold_text grey">
+        <h4 className=" semi_bold_text grey">
           Identify ambiguous speech patterns directly from the prospect's voice
           and<br></br> immediately recognize their emotions and{" "}
           <span className="white">intent.</span> Our deep-learning<br></br>{" "}
