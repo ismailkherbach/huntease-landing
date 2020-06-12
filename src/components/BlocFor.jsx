@@ -3,7 +3,7 @@ import React from "react";
 const BlocFor = () => {
   return (
     <div className="bloc-for-container flex fdc aic jcfs">
-      <h2 className="bold_text text_s38 blue">
+      <h2 className="extra_bold_text text_s38 blue">
         Integrations that fit into your workflow
       </h2>
       <img
@@ -12,7 +12,7 @@ const BlocFor = () => {
         src={require("../assets/img/separator.svg")}
       />
 
-      <h4 className="text_s21 regular_text grey">
+      <h4 className="text_s21 semi_bold_text grey">
         You can transition your team into Huntease seamlessly with <br></br>
         the tools you're already using.
       </h4>

@@ -6,7 +6,7 @@ const FirstBloc = () => {
     <div className="first-bloc-container flex fdc jcc aic">
       {" "}
       <br></br>
-      <h5 className="flex aic jcc bold_text orange text_s24">
+      <h5 className="flex aic jcc extra_bold_text orange text_s24">
         "On a traditional CRM, it takes an average of 6 clicks to make a call."
       </h5>
       <div className="first-bloc-inner  flex fdc aic jcc">
@@ -21,18 +21,15 @@ const FirstBloc = () => {
           <br></br>
           <h4 className="grey text_24 semi_bold_text">
             Huntease is a sales-calling software that employs AI to help sales
-            <br></br>
-            teams grow and be more productive. With an interface that's<br></br>
-            specifically designed for your SDR teams, they are able to makes
-            <br></br>
-            more calls, minimizing the amount of times they click away from
-            <br></br>
-            their screen to look for additional information or access their
-            calendar to book meetings.
+            teams grow and <br></br>be more productive. With an interface that's
+            specifically designed for your SDR <br></br>teams, they are able to
+            makes more calls, minimizing the amount of times they <br></br>{" "}
+            click away from their screen to look for additional information or
+            access their <br></br>calendar to book meetings.
           </h4>
         </div>
         <div className=" flex aic jcc">
-          <div className="flex features fdr aic jcc">
+          <div className="flex features fdr aifs jcc">
             {" "}
             <FirstBlocFeature
               text={"All-in-one"}

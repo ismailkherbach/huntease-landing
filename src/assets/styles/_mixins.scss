@@ -85,12 +85,12 @@ $breakpoints: (
   }
 }
 @mixin phone {
-  @media (min-width: 204px) and (max-width: 833px) {
+  @media (min-width: 204px) and (max-width: 767px) {
     @content;
   }
 }
 @mixin Tablet {
-  @media (min-width: 834px) and (max-width: 1023px) {
+  @media (min-width: 768px) and (max-width: 1023px) {
     @content;
   }
 }

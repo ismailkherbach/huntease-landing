@@ -6,13 +6,15 @@ const BlocPricing = (props) => {
   const [shown, SetShown] = useState(false);
   return (
     <div className="Bloc-five flex fdc aic jcc" id="pricing_bloc">
-      <h2 className="bold_text text_s45 blue">Simple & transparent pricing</h2>
-      <h4 className="text_s21 regular_text grey">
+      <h2 className="extra_bold_text text_s45 blue">
+        Simple & transparent pricing
+      </h2>
+      <h4 className="text_s21 semi_bold_text grey">
         Everything is about Freedom, and that is exactly what we are<br></br>{" "}
         giving you, try all the features for Free
       </h4>
       <div className="toggle-container flex fdr aic jcc">
-        <h3 className={`text_s27 regular_text ${checked ? "grey" : "blue"}`}>
+        <h3 className={`text_s27 extra_bold_text ${checked ? "grey" : "blue"}`}>
           Monthly
         </h3>
         <Switch
@@ -26,8 +28,8 @@ const BlocPricing = (props) => {
           onChange={() => SetChecked(!checked)}
           checked={checked}
         />
-        <h3 className={`text_s27 regular_text ${checked ? "blue" : "grey"}`}>
-          Yearly
+        <h3 className={`text_s27 extra_bold_text ${checked ? "blue" : "grey"}`}>
+          Annually
         </h3>
         <img
           className="green-notice"
@@ -60,8 +62,8 @@ const BlocPricing = (props) => {
         )}
         <div className="plan-container plan-container-basic flex fdc aic jcfs">
           <div className="flex fdc">
-            <h2 className="text_s38 bold_text blue">Basic</h2>
-            <h4 className="text_s14 regular_text grey">
+            <h2 className="text_s38 extra_bold_text blue">Basic</h2>
+            <h4 className="text_s14 semi_bold_text grey">
               Increase your sales revenue with an easy transition <br></br>to
               Huntease and a plan that best fits your workflow.
             </h4>
@@ -136,16 +138,24 @@ const BlocPricing = (props) => {
             className="button-demo flex fdr jcc aic  text_s18 bold_text white"
             onClick={props.tooglePopup}
           >
-            Get a free demo
-            <img alt="arrow" src={require("../assets/img/arrow.svg")} />
+            Request a demo{" "}
+            <div className="inner-button flex aic jcc">
+              {" "}
+              <img
+                alt="arrow"
+                src={require("../assets/img/awesome-arrow-right-white.svg")}
+              />
+            </div>{" "}
           </div>
         </div>
         <div className="plan-container flex fdc aic jcfs">
-          <div className="red_notice flex aic jcc">LAUNCHING PRICE</div>
+          <div className="red_notice extra_bold_text text_s14 flex aic jcc">
+            <p>LAUNCHING PRICE</p>
+          </div>
 
           <div className="flex fdc">
-            <h2 className="text_s38 bold_text blue">Growth</h2>
-            <h4 className="text_s14 regular_text grey">
+            <h2 className="text_s38 extra_bold_text blue">Growth</h2>
+            <h4 className="text_s14 semi_bold_text grey">
               Increase your sales revenue with an easy transition <br></br>to
               Huntease and a plan that best fits your workflow.
             </h4>
@@ -168,7 +178,7 @@ const BlocPricing = (props) => {
                   src={require("../assets/img/awesome-check.svg")}
                 />
                 <p className="text_s16 regular_text dark">
-                  240 Minutes of outgoing calls for free{" . "}
+                  240 Minutes of outgoing calls for free{"  . "}
                   <span onMouseEnter={() => SetShown(true)}>
                     {" "}
                     <img
@@ -227,14 +237,20 @@ const BlocPricing = (props) => {
             className="button-demo flex fdr jcc aic text_s18 bold_text white"
             onClick={props.tooglePopup}
           >
-            Get a free demo
-            <img alt="arrow" src={require("../assets/img/arrow.svg")} />
+            Request a demo{" "}
+            <div className="inner-button flex aic jcc">
+              {" "}
+              <img
+                alt="arrow"
+                src={require("../assets/img/awesome-arrow-right-white.svg")}
+              />
+            </div>
           </div>
         </div>
         <div className="plan-container plan-container-basic partner flex fdc aic jcfs">
           <div className="flex fdc">
-            <h2 className="text_s38 bold_text blue">Partner</h2>
-            <h4 className="text_s14 regular_text grey">
+            <h2 className="text_s38 extra_bold_text blue">Partner</h2>
+            <h4 className="text_s14 semi_bold_text grey">
               Increase your sales revenue with an easy transition <br></br>to
               Huntease and a plan that best fits your workflow.
             </h4>
@@ -244,7 +260,13 @@ const BlocPricing = (props) => {
             onClick={props.tooglePopup}
           >
             Contact us
-            <img alt="arrow" src={require("../assets/img/arrow.svg")} />
+            <div className="inner-button flex aic jcc">
+              {" "}
+              <img
+                alt="arrow"
+                src={require("../assets/img/awesome-arrow-right-white.svg")}
+              />
+            </div>{" "}
           </div>
         </div>
       </div>

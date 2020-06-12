@@ -49,6 +49,25 @@ $raduis-bloc: 20px;
   @include desktop-xl {
     padding: 100px 0 100px 0;
     background-size: 100%;
+    height: 700px;
+  }
+  @include desktop-lg {
+    height: 700px;
+  }
+  @include desktop-md {
+    height: 700px;
+  }
+  @include desktop-sm {
+    height: 700px;
+  }
+  @include desktop-xs {
+    height: 700px;
+  }
+  @include Tablet {
+    height: 700px;
+  }
+  @include phone {
+    height: 700px;
   }
   // background-color: #0026bc;
   border-radius: $raduis-bloc;
@@ -59,7 +78,7 @@ $raduis-bloc: 20px;
     margin: 0;
     padding: 0;
     @include phone {
-      font-size: 30px;
+      font-size: 40px;
     }
   }
   h4 {
@@ -77,29 +96,32 @@ $raduis-bloc: 20px;
     position: absolute;
     z-index: 400;
     @include desktop-xl {
-      width: 621px;
+      width: 921px;
+      bottom: -400px;
     }
     @include desktop-md {
-      width: 621px;
+      width: 700px;
+      bottom: -300px;
     }
     @include desktop-lg {
-      width: 621px;
+      width: 721px;
+      bottom: -300px;
     }
     @include desktop-sm {
-      width: 621px;
+      width: 720px;
+      bottom: -300px;
     }
     @include desktop-xs {
-      bottom: -250px;
-
+      bottom: -300px;
       width: 621px;
     }
     @include Tablet {
-      width: 521px;
+      width: 621px;
+      bottom: -270px;
     }
     @include phone {
-      bottom: -230px;
-
-      width: 401px;
+      bottom: -130px;
+      width: 331px;
     }
   }
 }
@@ -136,7 +158,10 @@ $raduis-bloc: 20px;
     float: left;
     width: 177px;
     @include phone {
-      width: 40px;
+      width: 55px;
+    }
+    @include Tablet {
+      width: 55px;
     }
   }
 }
@@ -203,7 +228,17 @@ $raduis-bloc: 20px;
   background-position: right;
   width: 96%;
   margin: 2%;
-  margin-top: 280px;
+  margin-top: 320px;
+
+  @include desktop-xl {
+    margin-top: 440px;
+  }
+  @include Tablet {
+    margin-top: 280px;
+  }
+  @include phone {
+    margin-top: 160px;
+  }
   background-color: white;
   border-radius: $raduis-bloc;
   // padding-left: 350px;
@@ -212,15 +247,19 @@ $raduis-bloc: 20px;
     text-align: center;
   }
   .first-bloc-inner {
-    padding-left: 2%;
-    padding-right: 2%;
+    // padding-left: 2%;
+    //  padding-right: 2%;
     width: 100%;
     .inner-text-bloc {
       padding-top: 75px;
       padding-bottom: 140px;
-      padding-left: 5%;
-      padding-right: 5%;
-
+      padding-left: 2%;
+      padding-right: 2%;
+      @include desktop-sm {
+        padding-left: 2%;
+        padding-right: 2%;
+        width: 85%;
+      }
       @include desktop-xl {
         padding-left: 5%;
         padding-right: 5%;
@@ -243,13 +282,14 @@ $raduis-bloc: 20px;
     }
     .features {
       flex-wrap: wrap;
-      width: 100%;
-      margin: 4% 0 4% 0;
+      // width: 100%;
+      //  margin: 4% 0 4% 0;
+      //   padding: 0 2% 0 2%;
       @include desktop-lg {
         width: 100%;
       }
       @include desktop-xl {
-        width: 100%;
+        //width: 60%;
       }
       @include desktop-sm {
         width: 100%;
@@ -264,9 +304,20 @@ $raduis-bloc: 20px;
       .feature {
         // margin-bottom: 5%;
         // margin-left: 40px;
-        //  margin: 0 5px 0 5px;
-        padding: 10px 15px 0 15px;
-        width: 270px;
+        margin: 0 10px 0 10px;
+        @include desktop-xs {
+          margin: 0 10px 10px 10px;
+        }
+        @include phone {
+          margin: 10px 10px 10px 10px;
+        }
+        @include desktop-xl {
+          margin: 0px 30px 0px 30px;
+        }
+        // padding: 10px 15px 0 15px;
+        //width: 270px;
+        width: 275px;
+
         @include desktop-xl {
           //   padding: 10px 60px 0 60px;
           width: 300px;
@@ -284,8 +335,8 @@ $raduis-bloc: 20px;
           padding: 30px 0 30px 0;
         }
         img {
-          width: 90px;
-          height: 90px;
+          width: 55px;
+          height: 55px;
         }
       }
     }
@@ -297,8 +348,8 @@ $raduis-bloc: 20px;
   margin: 100px 0 80px 0;
   position: relative;
 
-  .bloc-container {
-    margin: 0 0 0 0;
+  .bloc-5-container {
+    padding: 0 2% 0 2%;
     flex-wrap: wrap;
     width: 100%;
     //padding-left: 25%;
@@ -306,17 +357,24 @@ $raduis-bloc: 20px;
       margin: 0;
       // padding-right: 50px;
       //padding-left: 50px;
-      width: 40%;
+      width: 600px;
       // position: absolute;
-      right: -120px;
+      //right: -120px;
       @include phone {
-        width: 60%;
+        width: 50%;
+      }
+      @include desktop-xl {
+        width: 700px;
       }
     }
-    .blocs {
+    .blocs-5 {
       width: 600px;
-      height: 450px;
-      padding: 0 15px 0 15px;
+      @include Tablet {
+        padding-bottom: 5%;
+      }
+      @include phone {
+        padding-bottom: 5%;
+      }
       h3 {
         text-align: left;
         padding: 0;
@@ -412,15 +470,36 @@ $raduis-bloc: 20px;
     @include desktop-xl {
       width: 100%;
     }
-
+    .switch-feature-button-clicked {
+      width: 230px;
+      height: 60px;
+      background-color: #f9f9f9;
+      border-radius: 55px;
+      margin: 5px 10px 80px 10px;
+      cursor: pointer;
+      .Text {
+        text-align: center;
+        padding: 0 25px 0 25px;
+        margin: 0;
+      }
+      .circle-inner {
+        width: 40px;
+        height: 40px;
+        background-color: #d9dcef;
+        border-radius: 50%;
+        margin-left: 10px;
+        // float: left;
+      }
+      img {
+        width: 30px;
+      }
+    }
     .switch-feature-button {
       width: 230px;
       height: 60px;
-
       background-color: white;
       border-radius: 55px;
       margin: 5px 10px 80px 10px;
-
       cursor: pointer;
       .Text {
         text-align: center;
@@ -448,16 +527,31 @@ $raduis-bloc: 20px;
       margin: 0;
       padding-right: 50px;
       //padding-left: 50px;
-      width: 50%;
+      width: 650px;
       @include phone {
         width: 60%;
+      }
+      @include desktop-xl {
+        width: 800px;
+      }
+      @include desktop-lg {
+        width: 700px;
+      }
+      @include desktop-md {
+        width: 700px;
+      }
+      @include Tablet {
+        width: 500px;
+      }
+      @include phone {
+        width: 350px;
       }
     }
 
     .blocs {
       //margin-left: 10%;
       width: 550px;
-      height: 500px;
+      //height: 500px;
       @include phone {
         width: 300px;
         height: 300px;
@@ -516,8 +610,18 @@ $raduis-bloc: 20px;
   border-radius: $raduis-bloc;
   flex-wrap: wrap;
   padding: 100px 0 100px 0;
+  height: 700px;
   @include phone {
     margin-top: 120px;
+  }
+  @include desktop-xs {
+    height: 60%;
+  }
+  @include phone {
+    height: 60%;
+  }
+  @include Tablet {
+    height: 60%;
   }
   .inner-Text {
     padding: 0 5% 0 5%;
@@ -529,13 +633,21 @@ $raduis-bloc: 20px;
     h4 {
       text-align: left;
       line-height: 1.7;
+      padding-bottom: 5%;
+    }
+    .sepa {
+      width: 150px;
+      padding-bottom: 5%;
     }
   }
 
   img {
     //  padding: 0 5% 0 5%;
     // float: left;
-    width: 40%;
+    width: 500px;
+    @include desktop-xl {
+      width: 600px;
+    }
     @include phone {
       width: 60%;
       padding-bottom: 25px;
@@ -574,13 +686,15 @@ $raduis-bloc: 20px;
   h4 {
     text-align: center;
     padding-bottom: 0;
+    padding-top: 40px;
     margin-bottom: 0;
+    margin: 0;
   }
   .separator {
     width: 15%;
   }
   img {
-    width: 40%;
+    width: 55%;
     margin: 0;
     padding: 0;
     @include phone {
@@ -649,28 +763,33 @@ $raduis-bloc: 20px;
       .question-bloc {
         // background-color: white;
         .faq-toggle {
-          height: 80px;
+          // height: 80px;
           width: 540px;
           @include phone {
-            width: 90%;
+            width: 400px;
           }
-          border-radius: 161px;
+          border-radius: 40px;
           border: 2px solid #8c96cf;
           z-index: 200;
           margin: 0 20px 40px 20px;
-          padding: 0px 5px 0px 5px;
+          //  padding: 0px 15px 0px 15px;
           cursor: pointer;
 
           h4 {
             text-align: center;
+            padding: 5% 0 5% 0;
           }
         }
         .faq-toggled {
           height: 80px;
           width: 540px;
+          padding: 0px 15px 15px 15px;
+
           //    border: 1px solid #8c96cf;
           @include phone {
-            width: 100%;
+            width: 370px;
+            //   padding-bottom: 45px;
+            margin-bottom: 10px;
           }
           // border: 1px solid red;
         }
@@ -769,7 +888,8 @@ $raduis-bloc: 20px;
       top: 0px;
       right: -90px;
       @include phone {
-        right: -60px;
+        right: -10px;
+        top: -10px;
       }
     }
     h3 {
@@ -790,7 +910,34 @@ $raduis-bloc: 20px;
       border-radius: 10px;
       bottom: 300px;
       right: 200px;
-
+      @include desktop-xl {
+        bottom: 300px;
+        right: 220px;
+      }
+      @include desktop-lg {
+        bottom: 300px;
+        right: 220px;
+      }
+      @include desktop-md {
+        bottom: 240px;
+        right: 140px;
+      }
+      @include desktop-sm {
+        bottom: 240px;
+        right: 140px;
+      }
+      @include desktop-xs {
+        bottom: 520px;
+        right: 20px;
+      }
+      @include Tablet {
+        bottom: 520px;
+        right: 40px;
+      }
+      @include phone {
+        bottom: 450px;
+        right: 30px;
+      }
       box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.08);
       z-index: 100;
       padding: 0 0 0 15px;
@@ -826,13 +973,13 @@ $raduis-bloc: 20px;
       }
       @include desktop-xs {
         width: 340px;
-        margin: 0 4px 0 4px;
+        margin: 20px 4px 0 4px;
       }
       @include phone {
         width: 340px;
-        margin: 15px 8px 0 8px;
+        margin: 30px 8px 0 8px;
       }
-
+      padding-top: 15px;
       padding-bottom: 30px;
       margin: 0 8px 0 8px;
       margin-bottom: 5%;
@@ -851,21 +998,34 @@ $raduis-bloc: 20px;
         color: white;
         font-size: 18px;
         text-align: center;
+        p {
+          padding: 0;
+          margin: 0;
+        }
       }
       //  box-shadow: black 2px;
       .button-demo {
         width: 210px;
         height: 48px;
         background-color: #0026bc;
-
+        position: relative;
         text-align: center;
         border-radius: 24px;
         cursor: pointer;
+        padding-left: 14px;
         img {
           margin: 0;
           padding: 0;
           float: right;
           margin-right: 0;
+        }
+        .inner-button {
+          margin-left: 14px;
+          width: 46px;
+          height: 46px;
+          border-radius: 50%;
+          background-color: #193bc2;
+          float: right;
         }
       }
 
@@ -897,7 +1057,7 @@ $raduis-bloc: 20px;
       }
       h2 {
         text-align: left;
-        padding: 14px 0 0px 14px;
+        padding: 14px 0px 0px 14px;
         margin: 0;
       }
       h4 {
@@ -923,12 +1083,13 @@ $raduis-bloc: 20px;
   }
   h2 {
     text-align: center;
-
     margin: 0;
-    padding: 0;
+    padding: 0px 0px 30px 0px;
+    line-height: 1.5;
   }
   h4 {
     text-align: center;
+    padding: 0 0 30px 0;
   }
 }
 
@@ -1146,11 +1307,16 @@ body {
   .text_s#{$i} {
     font-size: #{$i}px;
     @media #{$small-screen} {
-      font-size: #{$i - 2}px;
+      font-size: #{$i - 5}px;
     }
   }
 }
 
+@for $i from 1 through 900 {
+  .fw#{$i} {
+    font-weight: #{$i};
+  }
+}
 .extra_bold_text {
   font-family: $font-extra-bold;
   line-height: 0.8;

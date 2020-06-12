@@ -9,7 +9,11 @@ const BlocThree = (props) => {
         <h2 className="text_s38 white bold_text">
           Automated emotion recognition <br></br>from natural conversations.
         </h2>
-        <img alt="separator" src={require("../assets/img/separator.svg")} />
+        <img
+          className="sepa"
+          alt="separator"
+          src={require("../assets/img/separator.svg")}
+        />
         <br></br>{" "}
         <h4 className="text_s18 semi_bold_text grey">
           Identify ambiguous speech patterns directly from the prospect's voice
@@ -20,7 +24,7 @@ const BlocThree = (props) => {
         </h4>
         <br></br>
         <div
-          className="button-demo flex fdr jcc aic"
+          className="button-demo flex semi_bold_text text_s18 fdr jcc aic"
           onClick={props.tooglePopup}
         >
           I want to learn more
