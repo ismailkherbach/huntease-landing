@@ -6,7 +6,7 @@ const BlocThree = (props) => {
       <img alt="ilust_2" src={require("../assets/illustrations/ilust_3.svg")} />
 
       <div className="inner-Text flex fdc jcfs">
-        <h2 className="text_s38 white bold_text">
+        <h2 className="text_s38 white extra_bold_text">
           Automated emotion recognition <br></br>from natural conversations.
         </h2>
         <img
