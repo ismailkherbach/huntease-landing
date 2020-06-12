@@ -29,7 +29,11 @@ const Popup = (props) => {
         <div className="popup flex fdc aic jcc">
           <div className="top_left" />
           <div className="cancel flex aic jcc" onClick={props.tooglePopup}>
-            X
+            <img
+              className="close"
+              alt="close"
+              src={require("../../assets/img/close-icon.svg")}
+            />
           </div>{" "}
           <img
             className="logo"
