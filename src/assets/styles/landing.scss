@@ -996,7 +996,10 @@ $raduis-bloc: 20px;
       margin: 0 8px 0 8px;
       margin-bottom: 5%;
       width: 19.5rem;
-
+      @include desktop-xl {
+        width: 22rem;
+        height: 36.33rem;
+      }
       background-color: white;
       border-radius: $raduis-bloc;
 
