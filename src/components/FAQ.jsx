@@ -14,9 +14,7 @@ const FAQ = (props) => {
   const toggle = () => setIsOpen(!isOpen);
   return (
     <div className="FAQ flex fdc aic jcfs" id="faq_bloc">
-      <h2 className="text_s38 extra_bold_text blue">
-        Frequently Asked Questions
-      </h2>
+      <h3 className=" extra_bold_text blue">Frequently Asked Questions</h3>
       <div className="faq-container grey">
         <div className="questions flex fdr jcc aic ">
           <div className="question-bloc flex fdc aic jcc ">
@@ -100,22 +98,20 @@ const FAQ = (props) => {
         </div>
       </div>
       <div className="bottom_bloc flex fdc aic jcc">
-        <h2 className="text_s46 semi_bold_text white">
+        <h3 className="semi_bold_text white">
           Interested in growing your sales
-        </h2>
+        </h3>
         <img
           className="flex fdrr jcfe separator"
           alt="separator_2"
           src={require("../assets/img/separator.svg")}
         />
-        <h2 className="text_s46 semi_bold_text white">team today?</h2>
+        <h3 className="text_s46 semi_bold_text white">team today?</h3>
         <div
           className="button-demo-two flex fdr jcc aic"
           onClick={props.tooglePopup}
         >
-          <h5 className="Text-inner text_s18 regular_text blue">
-            Boost my team
-          </h5>
+          <h5 className="Text-inner semi_bold_text blue">Boost my team</h5>
           <img alt="arrow" src={require(`../assets/img/arrow.svg`)} />
         </div>
       </div>

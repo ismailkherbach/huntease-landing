@@ -3,9 +3,9 @@ import React from "react";
 const BlocFor = () => {
   return (
     <div className="bloc-for-container flex fdc aic jcfs">
-      <h2 className="extra_bold_text  blue">
+      <h3 className="extra_bold_text  blue">
         Integrations that fit into your workflow
-      </h2>
+      </h3>
       <img
         className="flex fdrr jcfe separator"
         alt="separator_2"
