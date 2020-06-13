@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "90c84ffe0be472773aea93a316f63045",
+    "revision": "c80d1d3b612d83da01b8a9fab4cd4e9f",
     "url": "/huntease-landing/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/huntease-landing/static/css/2.829c9cb5.chunk.css"
   },
   {
-    "revision": "9f8106b3b257dc0c00e0",
-    "url": "/huntease-landing/static/css/main.965e988f.chunk.css"
+    "revision": "6e1ad5fe3220c5352dec",
+    "url": "/huntease-landing/static/css/main.107c8c0c.chunk.css"
   },
   {
     "revision": "49b64f5ef9238dd1ecc0",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/huntease-landing/static/js/2.c32e1717.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9f8106b3b257dc0c00e0",
+    "revision": "6e1ad5fe3220c5352dec",
     "url": "/huntease-landing/static/js/main.431a0b74.chunk.js"
   },
   {
