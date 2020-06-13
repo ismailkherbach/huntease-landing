@@ -997,8 +997,8 @@ $raduis-bloc: 20px;
       margin-bottom: 5%;
       width: 19.5rem;
       @include desktop-xl {
-        width: 22rem;
-        height: 36.33rem;
+        width: 24rem;
+        height: 38.33rem;
       }
       background-color: white;
       border-radius: $raduis-bloc;
@@ -1088,6 +1088,7 @@ $raduis-bloc: 20px;
         padding-left: 20px;
         padding-right: 3px;
         font-size: 0.77em;
+        padding-bottom: 2.8em;
       }
     }
   }
