@@ -25,7 +25,7 @@ $raduis-bloc: 20px;
     margin: 0;
   }
   h3 {
-    font-size: 2.11em;
+    font-size: 2.37em;
     line-height: 1.2;
     margin: 0;
   }
@@ -995,7 +995,10 @@ $raduis-bloc: 20px;
       padding-bottom: 30px;
       margin: 0 8px 0 8px;
       margin-bottom: 5%;
-      width: 20rem;
+      width: 19.5rem;
+      @include desktop-xl {
+        width: 24rem;
+      }
       background-color: white;
       border-radius: $raduis-bloc;
 
@@ -1013,6 +1016,8 @@ $raduis-bloc: 20px;
         p {
           padding: 0;
           margin: 0;
+          font-size: 0.83em;
+          font-weight: 900;
         }
       }
       //  box-shadow: black 2px;
@@ -1064,20 +1069,23 @@ $raduis-bloc: 20px;
             margin: 0;
             padding: 0;
             padding-left: 5px;
-            padding-right: 5px;
-            font-size: 0.9em;
+            // padding-right: 5px;
+            font-size: 0.86em;
+          }
+          .notice-warning {
+            width: 21px;
           }
         }
       }
       h3 {
         text-align: left;
-        padding: 10px 30px 10px 10px;
+        padding: 10px 30px 10px 20px;
         margin: 0;
       }
       h4 {
         text-align: left;
-        padding-left: 10px;
-        // padding-right: 5px;
+        padding-left: 20px;
+        padding-right: 3px;
         font-size: 0.77em;
       }
     }
@@ -1085,7 +1093,7 @@ $raduis-bloc: 20px;
   h5 {
     text-align: left;
     // line-height: 3;
-    font-size: 0.9em;
+    font-size: 0.88em;
     margin: 0;
     padding-left: 14px;
     padding-right: 5px;

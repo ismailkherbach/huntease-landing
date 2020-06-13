@@ -143,65 +143,66 @@ const BlocPricing = (props) => {
           </div>
         </div>
         <div className="plan-container flex fdc aic jcfs">
-          <div className="red_notice extra_bold_text text_s14 flex aic jcc">
+          <div className="red_notice extra_bold_text flex aic jcc">
             <p>LAUNCHING PRICE</p>
           </div>
 
           <div className="flex fdc">
             <h3 className="extra_bold_text blue">Growth</h3>
             <h4 className="semi_bold_text grey">
-              Increase your sales revenue with an easy transition <br></br>to
-              Huntease and a plan that best fits your workflow.
+              Increase your sales revenue with an easy transition to Huntease
+              and a plan that best fits your workflow.
             </h4>
             <h1 className="flex jcfs aic text_s90 blue bold_text">
               <span className="text_s60">€</span>39
               <span className="text_s20">.99</span>
             </h1>{" "}
-            <h5 className=" regular_text grey">Per user/monthly</h5>
+            <h5 className="t regular_text grey">Per user/monthly</h5>
             <div className="plan-features flex fdc jcfs">
               <div className="plan-item flex fdr jcfs">
                 <img
                   alt="checked"
                   src={require("../assets/img/awesome-check.svg")}
                 />
-                <p className=" regular_text dark">3 user minimum</p>
+                <p className="regular_text dark">3 user minimum</p>
               </div>
               <div className="plan-item flex fdr jcfs">
                 <img
                   alt="checked"
                   src={require("../assets/img/awesome-check.svg")}
                 />
-                <p className=" regular_text dark">
-                  240 Minutes of outgoing calls for free.
-                  <span onMouseEnter={() => SetShown(true)}>
-                    {" "}
-                    <img
-                      alt="checked"
-                      src={require("../assets/img/awesome-info-circle.svg")}
-                    />
-                  </span>
+                <p className="regular_text dark">
+                  240 Minutes of outgoing calls for free
                 </p>
+                <span onMouseEnter={() => SetShown(true)}>
+                  {" "}
+                  <img
+                    className="notice-warning"
+                    alt="checked"
+                    src={require("../assets/img/awesome-info-circle.svg")}
+                  />
+                </span>
               </div>
               <div className="plan-item flex fdr jcfs">
                 <img
                   alt="checked"
                   src={require("../assets/img/awesome-check.svg")}
                 />
-                <p className=" regular_text dark">Personal dashboard</p>
+                <p className="regular_text dark">Personal dashboard</p>
               </div>
               <div className="plan-item flex fdr jcfs">
                 <img
                   alt="checked"
                   src={require("../assets/img/awesome-check.svg")}
                 />
-                <p className=" regular_text dark">Voice emotional analysis</p>
+                <p className="regular_text dark">Voice emotional analysis</p>
               </div>
               <div className="plan-item flex fdr jcfs">
                 <img
                   alt="checked"
                   src={require("../assets/img/awesome-check.svg")}
                 />
-                <p className=" regular_text dark">
+                <p className="regular_text dark">
                   Conversional Guide (unlimited)
                 </p>
               </div>
