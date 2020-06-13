@@ -7,13 +7,9 @@ const BlocThree = (props) => {
 
       <div className="inner-Text flex fdc jcfs">
         <h3 className="white extra_bold_text">
-          Automated emotion recognition <br></br>from natural conversations.
+          Automated emotion recognition <br></br>from <strong>natural</strong>{" "}
+          conversations.
         </h3>
-        <img
-          className="sepa"
-          alt="separator"
-          src={require("../assets/img/separator.svg")}
-        />
         <br></br>{" "}
         <h4 className=" semi_bold_text grey">
           Identify ambiguous speech patterns directly from the prospect's voice

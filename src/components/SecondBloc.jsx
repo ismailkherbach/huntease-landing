@@ -11,10 +11,10 @@ import { act } from "react-dom/test-utils";
 const text_1 = (
   <div className="blocs">
     <h3 className="blue extra_bold_text">
-      Know your metrics and increase <br></br> your team's performance.
+      Know your metrics and increase <br></br> your team's{" "}
+      <strong>performance.</strong>
     </h3>
-    <img alt="separator_2" src={require("../assets/img/separator.svg")} />
-
+    <br></br>
     <h4 className="grey  semi_bold_text">
       Huntease's dashboard provides day-to-day insights on SDR<br></br>
       performance metrics, and recaps daily acheivements.
@@ -35,9 +35,8 @@ const text_1 = (
 const text_2 = (
   <div className="blocs">
     <h3 className="blue  extra_bold_text">
-      Close the deal<br></br>With team schedules.
+      Close the <strong>deal</strong> <br></br>With team schedules.
     </h3>
-    <img alt="separator_2" src={require("../assets/img/separator.svg")} />
     <h4 className="grey  semi_bold_text">
       The average SDR usually has to use a CRM, phone<br></br>system, script
       documents and calendars from several<br></br>providers to close one
@@ -82,8 +81,7 @@ const text_3 = (
 const text_4 = (
   <div className="blocs">
     <h3 className="blue  extra_bold_text">
-      Access your future customers with
-      <br></br>one click.
+      Access your future customers with one click.
     </h3>
     <br></br>
     <br></br>

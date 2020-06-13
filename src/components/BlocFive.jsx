@@ -2,15 +2,13 @@ import React from "react";
 
 const BlocFive = () => {
   return (
-    <div className="bloc-5 flex fdc aic">
-      <div className="bloc-5-container flex fdr aic jcc">
+    <div className="bloc-5 flex fdc aifs jcc">
+      <div className="bloc-5-container flex fdr aifs jcc">
         <div className="blocs-5 flex aifs jcc fdc">
-          <h3 className="extra_bold_text blue">Competitive</h3>{" "}
-          <img
-            className="sepa"
-            alt="separator_2"
-            src={require("../assets/img/separator.svg")}
-          />
+          <h3 className="extra_bold_text blue">
+            <strong>Competitive</strong>
+          </h3>
+
           <h3 className=" extra_bold_text blue">
             environment for your sales team.
           </h3>

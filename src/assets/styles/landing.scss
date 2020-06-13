@@ -18,20 +18,22 @@ $raduis-bloc: 20px;
 .App {
   text-align: center;
   position: relative;
-  z-index: 0;
 
   //background-color: black;
   h2 {
     font-size: 3em;
     line-height: 1.2;
     margin: 0;
+    @include phone {
+      font-size: 2em;
+    }
   }
   h3 {
     font-size: 2.37em;
     line-height: 1.2;
     margin: 0;
     @include phone {
-      font-size: 2em !important;
+      font-size: 1.4em;
 
       margin: 0;
     }
@@ -40,10 +42,38 @@ $raduis-bloc: 20px;
     font-size: 1em;
     line-height: 1.7;
     @include phone {
-      font-size: 0.9em !important;
+      font-size: 1.2em !important;
       line-height: 1.7;
     }
   }
+
+  strong {
+    position: relative;
+    //width: 100%;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -0.6rem;
+      left: -0.5rem;
+      right: -0.5rem;
+      height: 1rem;
+      z-index: 100;
+
+      // Position the line behind the text so that
+      // it is still easily readable
+      //width: 100%; // The SVG is added as an SVG background image
+      background-image: url("../img/separator.svg");
+      background-repeat: no-repeat;
+      // This allows the SVG to flex in size to fit
+      // any length of word. If the word is short,
+      // the SVG will be stretched vertically, if it
+      // is long, the SVG will be stretched horizontally.
+      // The jagged nature of this particular SVG works
+      // with this transforming.
+      // background-size: cover;
+    }
+  }
+
   h5 {
   }
 }
@@ -64,6 +94,8 @@ $raduis-bloc: 20px;
     height: 406px;
     background-color: #0026bc;
     border-radius: $raduis-bloc;
+    margin: 10px 10px 0 10px;
+
     width: 98%;
   }
   @include Tablet {
@@ -99,16 +131,22 @@ $raduis-bloc: 20px;
   // background-color: #0026bc;
   border-radius: $raduis-bloc;
   position: relative;
-  h2 {
-    text-align: center;
-    font-weight: regular;
-
+  .text-container {
+    width: 60%;
     @include phone {
-      font-size: 40px;
+      // font-size: 40px;
+      width: 80%;
     }
-  }
-  h4 {
-    text-align: center;
+    h2 {
+      text-align: center;
+
+      @include phone {
+        font-size: 2.35em;
+      }
+    }
+    h4 {
+      text-align: center;
+    }
   }
   .sepa {
     @include phone {
@@ -272,6 +310,15 @@ $raduis-bloc: 20px;
   h5 {
     text-align: center;
   }
+  p {
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.6;
+    @include phone {
+      font-size: 1.2em;
+      padding: 0 4% 0 4%;
+    }
+  }
   .first-bloc-inner {
     // padding-left: 2%;
     //  padding-right: 2%;
@@ -289,7 +336,7 @@ $raduis-bloc: 20px;
       @include desktop-xl {
         padding-left: 5%;
         padding-right: 5%;
-        width: 85%;
+        width: 90%;
       }
       @include phone {
         padding-left: 1.8%;
@@ -305,6 +352,7 @@ $raduis-bloc: 20px;
       h4 {
         text-align: left;
       }
+
       img {
         width: 274.78px;
         margin: 0;
@@ -355,7 +403,7 @@ $raduis-bloc: 20px;
         }
         p {
           text-align: center;
-
+          font-size: 1em;
           margin: 0;
           padding: 0;
         }
@@ -376,30 +424,43 @@ $raduis-bloc: 20px;
 }
 .bloc-5 {
   width: 100%;
+
   // flex-wrap: wrap;
   margin: 100px 0 80px 0;
   position: relative;
-
+  display: flex; /* displays flex-items (children) inline */
+  overflow-x: hidden;
+  overflow-y: hidden;
   .bloc-5-container {
-    padding: 0 2% 0 2%;
+    padding: 10% 2% 10% 20%;
     flex-wrap: wrap;
-    width: 100%;
+    @include desktop-xs {
+      padding: 10% 2% 10% 10%;
+    }
+    @include Tablet {
+      padding: 10% 2% 10% 3%;
+    }
     @include phone {
       width: 90%;
-      padding: 0 1% 0 1%;
+      padding: 60% 2% 10% 9%;
     }
     //padding-left: 25%;
     img {
-      margin: 0;
+      //margin: 0;
       // padding-right: 50px;
       //padding-left: 50px;
-      width: 600px;
-      // position: absolute;
-      //right: -120px;
+      width: 40%;
+      position: absolute;
+      right: -120px;
+      top: 60px;
       @include phone {
-        width: 70%;
-        padding: 0 2% 0 6%;
+        width: 60%;
+        right: -40px;
+        top: -70px;
+        position: absolute;
+        height: 70%;
       }
+
       @include desktop-xl {
         width: 700px;
       }
@@ -472,12 +533,13 @@ $raduis-bloc: 20px;
     .switch-bloc-mobile {
       flex: 0 0 25% 0; /* doesn't grow nor shrink, initial width set to 25% of the parent's */
       height: 3em;
+      padding: 0 5px 0 5px;
       .switch-feature-button-mobile {
         width: 180px;
         height: 40px;
         background-color: white;
         border-radius: 55px;
-        margin: 8px 8px 8px 8px;
+        margin: 8px 3px 8px 3px;
         cursor: pointer;
         .Text {
           text-align: center;
@@ -486,15 +548,15 @@ $raduis-bloc: 20px;
           margin: 0;
         }
         .circle-inner {
-          width: 17px;
-          height: 17px;
+          width: 25px;
+          height: 25px;
           background-color: #d9dcef;
           border-radius: 50%;
           margin-left: 4px;
           // float: left;
         }
         img {
-          width: 30px;
+          width: 40px;
         }
       }
     }
@@ -602,6 +664,7 @@ $raduis-bloc: 20px;
       @include phone {
         width: 85%;
         height: 300px;
+        padding-left: 1.2%;
       }
       h4 {
         text-align: left;
@@ -680,7 +743,7 @@ $raduis-bloc: 20px;
     height: 60%;
   }
   .inner-Text {
-    padding: 0 2% 0 4%;
+    padding: 0 2% 0 7%;
     h3 {
       text-align: left;
       margin: 0;
@@ -754,7 +817,7 @@ $raduis-bloc: 20px;
     margin: 0;
     padding: 0;
     @include phone {
-      width: 65%;
+      width: 90%;
     }
   }
 }
@@ -869,35 +932,36 @@ $raduis-bloc: 20px;
     // background-size: 100%;
     background-repeat: no-repeat;
     // background-attachment: fixed;
-    background-position: right;
-    width: 1306px;
+    background-position: center;
+    width: 80%;
     height: 406px;
     border-radius: 20px;
 
     @include phone {
-      width: 280px;
+      //  width: 280px;
       height: 406px;
+      padding: 0 3% 0 3%;
       background-color: #0026bc;
     }
     @include Tablet {
-      width: 280px;
+      //width: 280px;
       height: 406px;
       background-color: #0026bc;
     }
     @include desktop-lg {
-      width: 734px;
+      //    width: 734px;
       height: 397px;
     }
     @include desktop-md {
-      width: 734px;
+      //  width: 734px;
       height: 397px;
     }
     @include desktop-sm {
-      width: 734px;
+      // width: 734px;
       height: 397px;
     }
     @include desktop-xs {
-      width: 734px;
+      // width: 734px;
       height: 397px;
     }
     position: absolute;
@@ -906,6 +970,10 @@ $raduis-bloc: 20px;
       text-align: center;
       margin: 0;
       padding: 0;
+      @include phone {
+        //  width: 280px;
+        font-size: 1.6em;
+      }
     }
     img {
       width: 183px;
@@ -946,6 +1014,10 @@ $raduis-bloc: 20px;
   @include desktop-xs {
     transform: scale(0.7);
   }
+  @include phone {
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
 
   padding-top: 5%;
   padding-bottom: 5%;
@@ -970,7 +1042,7 @@ $raduis-bloc: 20px;
     }
     h5 {
       text-align: center;
-      font-size: 1.8em;
+      font-size: 1.4em;
       margin: 0;
       padding: 0;
     }
@@ -1038,12 +1110,12 @@ $raduis-bloc: 20px;
         background-color: #fbf9f9;
       }
       &.partner {
-        height: 269px !important;
+        height: 40% !important;
       }
 
       @include phone {
         width: 100%;
-        //  margin: 30px 8px 0 8px;
+        margin: 30px 8px 30px 8px;
       }
       padding-top: 15px;
       padding-bottom: 30px;
@@ -1165,10 +1237,20 @@ $raduis-bloc: 20px;
     text-align: center;
     margin: 0;
     padding: 0px 0px 20px 0px;
+    font-size: 2.6em;
+    @include phone {
+      padding-left: 2%;
+      padding-right: 2%;
+      font-size: 2em;
+    }
   }
   h4 {
     text-align: center;
     padding: 0 0 0px 0;
+    @include phone {
+      padding-left: 2%;
+      padding-right: 2%;
+    }
   }
 }
 
@@ -1292,6 +1374,22 @@ $raduis-bloc: 20px;
     height: 100%;
     border-radius: 0px;
   }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  ul li {
+    list-style-type: none;
+    text-align: center;
+    margin: 10px 14px 10px 14px;
+    cursor: pointer;
+    font-size: 3em;
+    // padding: 25px;
+  }
+  & .button-demo {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
   .top_left {
     background-image: url("../left_back.svg");
     filter: brightness(0.1);
@@ -1375,6 +1473,9 @@ $raduis-bloc: 20px;
 html,
 body {
   background-color: #f0f1f7;
+  h3 {
+    font-size: 1rem;
+  }
 }
 
 .fade-enter .btn {

@@ -99,13 +99,9 @@ const FAQ = (props) => {
       </div>
       <div className="bottom_bloc flex fdc aic jcc">
         <h3 className="semi_bold_text white">
-          Interested in growing your sales
+          Interested in <strong>growing</strong> your sales
         </h3>
-        <img
-          className="flex fdrr jcfe separator"
-          alt="separator_2"
-          src={require("../assets/img/separator.svg")}
-        />
+
         <h3 className="text_s46 semi_bold_text white">team today?</h3>
         <div
           className="button-demo-two flex fdr jcc aic"

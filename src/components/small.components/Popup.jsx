@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { Alert } from "reactstrap";
 const Popup = (props) => {
   //  const [isOpen, setIsOpen] = useState(false);
   const [email, SetEmail] = useState("");
@@ -9,18 +10,22 @@ const Popup = (props) => {
   //const toggle = () => setIsOpen(!isOpen);
 
   const send_mail = async () => {
-    const response = await axios.post(
-      "https://huntease-mvp.herokuapp.com/request-demo",
-      {
-        mail: email,
-        phone: phone,
-        name: name,
+    if ((email && phone && name) != "") {
+      const response = await axios.post(
+        "https://huntease-mvp.herokuapp.com/request-demo",
+        {
+          mail: email,
+          phone: phone,
+          name: name,
+        }
+      );
+      if ((response.status = 200)) {
+        SetSuccess(true);
+        setTimeout(props.tooglePopup, 3000);
+        console.log("Success !");
       }
-    );
-    if ((response.status = 200)) {
-      SetSuccess(true);
-      setTimeout(props.tooglePopup, 3000);
-      console.log("Success !");
+    } else {
+      alert("Please fill all inputs!");
     }
   };
   return (
