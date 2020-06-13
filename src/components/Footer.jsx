@@ -39,7 +39,7 @@ const Footer = () => {
             }}
           >
             {" "}
-            Faq
+            F.A.Q
           </li>
         </ul>
       </div>

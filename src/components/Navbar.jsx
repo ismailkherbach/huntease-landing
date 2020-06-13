@@ -55,7 +55,7 @@ const Navbar = (props) => {
               }}
             >
               {" "}
-              Faq
+              F.A.Q
             </li>
           </ul>
           <div

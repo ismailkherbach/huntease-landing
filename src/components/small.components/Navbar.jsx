@@ -55,7 +55,7 @@ const NavbarPopup = (props) => {
               });
             }}
           >
-            Faq
+            F.A.Q
           </li>
         </ul>
         <div
