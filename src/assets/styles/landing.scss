@@ -891,7 +891,13 @@ $raduis-bloc: 20px;
 }
 .Bloc-five {
   @include desktop-lg {
-    //transform: scale(0.78);
+    transform: scale(0.9);
+  }
+  @include desktop-md {
+    transform: scale(0.82);
+  }
+  @include desktop-sm {
+    transform: scale(0.75);
   }
 
   padding-top: 5%;
