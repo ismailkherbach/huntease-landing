@@ -1240,6 +1240,18 @@ $raduis-bloc: 20px;
   }
 }
 .popup {
+  @include desktop-lg {
+    transform: scale(0.95);
+  }
+  @include desktop-md {
+    transform: scale(0.9);
+  }
+  @include desktop-sm {
+    transform: scale(0.87);
+  }
+  @include desktop-xs {
+    transform: scale(0.85);
+  }
   display: inline-block;
   max-width: 500px;
   height: 700px;
@@ -1308,6 +1320,10 @@ $raduis-bloc: 20px;
       text-align: center;
       padding-bottom: 20px;
       font-size: 14px;
+    }
+    h4 {
+      text-align: center;
+      padding: 20px 0 20px 0;
     }
     input {
       width: 400px;

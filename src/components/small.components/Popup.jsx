@@ -41,12 +41,12 @@ const Popup = (props) => {
             src={require("../../assets/img/logo-white-retina.svg")}
           />
           <div className="popup-inner-container flex fdc aic jcc">
-            <h3 className="text_s24 regular_text white">
+            <h3 className="semi_bold_text white">
               Interested in growing your sales team today? Send us a request 👇
             </h3>
-            <p className="text_s16 regular_text grey">
+            <h4 className="semi_bold_text grey">
               We'll contact you as soon as we receive your request.
-            </p>
+            </h4>
             <div className="flex fdc aifs">
               <label className="text_s16 regular_text white">First name</label>
               <input
@@ -82,10 +82,10 @@ const Popup = (props) => {
       ) : (
         <div className="success_popup flex fdc aic jcc white text_s14 light_text">
           <div className="top_left " />
-          <h2>
+          <h3 className="semi_bold_text white">
             Thank you for contacting us<br></br> We'll contact you as soon as we
             receive your request
-          </h2>
+          </h3>
         </div>
       )}
     </div>
