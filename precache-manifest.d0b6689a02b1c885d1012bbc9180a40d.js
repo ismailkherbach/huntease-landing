@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0db3d8a61245e6293f26ac1ed134d348",
+    "revision": "4bb5c5a249cc66366d78218f1b219b50",
     "url": "/huntease-landing/index.html"
   },
   {
-    "revision": "55fb68c076e06be15f22",
+    "revision": "49b64f5ef9238dd1ecc0",
     "url": "/huntease-landing/static/css/2.829c9cb5.chunk.css"
   },
   {
-    "revision": "1dd1cd8154d7e08be675",
-    "url": "/huntease-landing/static/css/main.8ff05425.chunk.css"
+    "revision": "09d57da87b913f4f5e14",
+    "url": "/huntease-landing/static/css/main.1c04e9ff.chunk.css"
   },
   {
-    "revision": "55fb68c076e06be15f22",
-    "url": "/huntease-landing/static/js/2.47022a68.chunk.js"
+    "revision": "49b64f5ef9238dd1ecc0",
+    "url": "/huntease-landing/static/js/2.c32e1717.chunk.js"
   },
   {
     "revision": "f4f580340f8301788a67d1fc296d2292",
-    "url": "/huntease-landing/static/js/2.47022a68.chunk.js.LICENSE.txt"
+    "url": "/huntease-landing/static/js/2.c32e1717.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1dd1cd8154d7e08be675",
-    "url": "/huntease-landing/static/js/main.7a462305.chunk.js"
+    "revision": "09d57da87b913f4f5e14",
+    "url": "/huntease-landing/static/js/main.dc19f36c.chunk.js"
   },
   {
     "revision": "d080fe51d7783fc3a3e7",
@@ -116,6 +116,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/huntease-landing/static/media/header_back.9df5eff1.png"
   },
   {
+    "revision": "f3ca50e50428d3bf777b86e3fa329d63",
+    "url": "/huntease-landing/static/media/header_back.f3ca50e5.svg"
+  },
+  {
     "revision": "ab5e62afb5798e6747a0d77a40de9741",
     "url": "/huntease-landing/static/media/ilust_1.ab5e62af.svg"
   },
@@ -150,6 +154,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5cc00b571396a5e5578c6f895821847b",
     "url": "/huntease-landing/static/media/logo_mobile.5cc00b57.svg"
+  },
+  {
+    "revision": "b84c88a3e3b0ff9d870ae4c3d0889876",
+    "url": "/huntease-landing/static/media/right-top.b84c88a3.svg"
   },
   {
     "revision": "978d1af5286f6b616c1e2752b71b01d8",
