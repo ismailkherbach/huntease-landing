@@ -13,9 +13,9 @@ const FirstBloc = () => {
         {" "}
         <div className="inner-text-bloc flex fdc aifs jcfs">
           {" "}
-          <h2 className="blue bold_text text_s55">All you need</h2>
+          <h2 className="blue extra_bold_text">All you need</h2>
           <img alt="separator_2" src={require("../assets/img/separator.svg")} />
-          <h2 className="blue bold_text text_s55">
+          <h2 className="blue extra_bold_text">
             for your cold-calling campaigns.
           </h2>
           <br></br>
